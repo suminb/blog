@@ -226,6 +226,9 @@ a:visited { color: #205caa; }
 .post-content blockquote p {
   margin: 16px 0;
 }
+.post-content table {
+  margin: auto;
+}
 
 .post-content ul,
 .post-content ol { padding-left: 20px; }
