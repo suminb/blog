@@ -233,6 +233,12 @@ a:visited { color: #205caa; }
 .post-content ul,
 .post-content ol { padding-left: 20px; }
 
+.post-content div.footnotes {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px dashed #d5d5e9;
+}
+
 .post pre,
 .post code {
   border: 1px solid #d5d5e9;
