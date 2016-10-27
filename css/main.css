@@ -215,6 +215,20 @@ a:visited { color: #205caa; }
   letter-spacing: -1px;
 }
 
+.post-content .float-left {
+  float: left;
+  margin-right: 1em;
+}
+.post-content .float-right {
+  float: right;
+  margin-left: 1em;
+}
+.post-content figcaption {
+  font-size: 0.9em;
+  padding: 0.5em 0.5em 1.5em 0.5em;
+  text-align: center;
+}
+
 .post-content blockquote {
   border-left: 4px solid #e8e8e8;
   padding-left: 20px;
@@ -445,15 +459,6 @@ img.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-div.page-content img.float-left {
-  float: left;
-  margin-right: 1em;
-}
-div.page-content img.float-right {
-  float: right;
-  margin-left: 1em;
 }
 
 p.license {
