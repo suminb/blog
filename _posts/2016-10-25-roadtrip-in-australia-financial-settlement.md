@@ -185,7 +185,7 @@ $$
                 return m(i - 1, limit, values, taken)
             else:
                 left = m(i - 1, limit, values, taken)
-                right = m(i - 1, limit - curr, values) + curr
+                right = m(i - 1, limit - curr, values, taken) + curr
         
                 if right > left:
                     taken[(i, limit)] = 1
