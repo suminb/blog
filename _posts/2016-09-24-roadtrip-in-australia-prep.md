@@ -6,7 +6,6 @@ categories:
 tags:
 - australia
 published: true
-draft: true
 meta:
 author:
   email: suminb@gmail.com
@@ -149,7 +148,7 @@ GEP가 무엇인지에 대한 공식 설명은 "다양성과 도전정신, 그�
 
 ### 세면도구
 
-현지에서 구입해도 괜찮지만 나는 [원정코딩]()할 때 가져가는 세면도구 킷(kit)이 있기 때문에 그냥 그걸 그대로 들고 가기로 했다. 구성품은 칫솔, 치약, 세안제, 바디워시, 샴푸, 로션, 헤어왁스, 헤어스프레이, 전동면도기이다. 물론 모두 휴대용으로 제작된 소형 제품들이다.
+현지에서 구입해도 괜찮지만 나는 [원정코딩](http://labs.suminb.com/s/coding-expedition)할 때 가져가는 세면도구 킷(kit)이 있기 때문에 그냥 그걸 그대로 들고 가기로 했다. 구성품은 칫솔, 치약, 세안제, 바디워시, 샴푸, 로션, 헤어왁스, 헤어스프레이, 전동면도기이다. 물론 모두 휴대용으로 제작된 소형 제품들이다.
 
 ### 액션캠
 
@@ -173,7 +172,7 @@ GEP가 무엇인지에 대한 공식 설명은 "다양성과 도전정신, 그�
 [^1]: 사실 나는 대여한 차량을 표현하는 말로 'rental car'라는 표현이 익숙하지만, [올바른 외래어 표기법이 '렌터카'](http://world.kbs.co.kr/korean/program/program_koreanlanguage_detail.htm?No=1737)이기 때문에 이 글에서는 '렌터카'로 통일한다.
 [^2]: 주행거리가 이것의 2.5배쯤 되는 자동차 여행도 해봤는데, 이 글의 주제에서 벗어나기 때문에 다음에 기회가 있다면 따로 글을 써보는게 좋을것 같다.
 [^3]: 올해 말에 진에어에서 직항 노선을 하나 편성한다고 한다. 관련 기사 [[단독] 진에어, 국적사 최초 12월 '호주 케언즈' 신규취항 나선다](http://www.ajunews.com/view/20160609103350369)
-[^gep]: <http://company.nexon.com/careers/hr_system/welfare/welfare.aspx>
+[^gep]: [넥슨 인사제도](http://company.nexon.com/careers/hr_system/welfare/welfare.aspx)
 
 [Sydney]: https://ko.wikipedia.org/wiki/%EC%8B%9C%EB%93%9C%EB%8B%88
 [Melbourne]: https://ko.wikipedia.org/wiki/%EB%A9%9C%EB%B2%84%EB%A5%B8
