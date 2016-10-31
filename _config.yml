@@ -3,7 +3,7 @@ title: Rubbish Philosopher
 email: suminb@gmail.com
 description: "This statement is false."
 baseurl: ""
-url: "http://blog.suminb.com"
+url: "http://philosophical.one"
 permalink: /post/:title/
 paginate: 15
 paginate_path: /page/:num
