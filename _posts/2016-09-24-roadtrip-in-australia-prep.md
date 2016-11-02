@@ -31,7 +31,7 @@ GEP가 무엇인지에 대한 공식 설명은 "다양성과 도전정신, 그�
 여행 계획
 ---
 <figure class="float-right" style="width:50%; max-width:480px;">
-  <img src="/attachments/2016/trip-to-australia/wikia-screenshot.png">
+  <img src="/attachments/2016/roadtrip-to-australia/prep/wikia-screenshot.png">
   <figcaption>이렇게 위키 페이지를 만들어서 다같이 여행 계획을 정리하기도 했다.</figcaption>
 </figure>
 
@@ -69,7 +69,7 @@ GEP가 무엇인지에 대한 공식 설명은 "다양성과 도전정신, 그�
 
 약 2주 정도 여행을 할 계획이었는데, 이왕 여행 하는거 친구들 얼굴도 좀 볼겸 서부 도시에 거주하고 있는 친구들에게 연락을 하기 시작했다. "내가 여행을 계획중인데, 몇월 몇일 쯤에 너희 집을 지나갈 것 같아. 시간 괜찮으면 같이 놀자. 그리고 나 하룻밤만 재워줘." 어떻게 보면 갑작스럽고 무례한 부탁일수도 있는데 다들 흔쾌히 승락했다. 정말 고마운 친구들이다.
 
-<img src="/attachments/2016/trip-to-australia/us-westcoast.png" style="max-width:60%">
+<img src="/attachments/2016/roadtrip-to-australia/prep/us-westcoast.png" style="max-width:60%">
 
 그렇게 해서 이렇게 다섯개의 도시를 거쳐가는 여행 계획이 완성되었다. 주행 거리만 4,100km가 넘는 대장정이었다.[^2]
 
@@ -86,7 +86,7 @@ GEP가 무엇인지에 대한 공식 설명은 "다양성과 도전정신, 그�
 [구글 지도](http://maps.google.com)를 펼쳐놓고 보니 호주의 땅은 정말 넓었다. 시드니에서 팜 코브까지의 거리를 보니 약 2,700km 정도였다. 왕복 거리가 대략 5,300km 였다. "미국에선 이것보다 더한 짓도 했었는데 이정도야 별것 아니지"와 같은 안일한 생각으로 여행의 현실성에 대한 고민을 진지하게 해보지 않았다. 
 
 <figure>
-  <img src="/attachments/2016/trip-to-australia/route-plans.png" style="max-width:80%">
+  <img src="/attachments/2016/roadtrip-to-australia/prep/route-plans.png" style="max-width:80%">
   <figcaption>호주 땅의 광활함을 표현하기 위해 똑같은 스케일로 표시된 한반도 지도를 옆에 놓고 비교해보았다.</figcaption>
 </figure>
 
@@ -132,7 +132,7 @@ GEP가 무엇인지에 대한 공식 설명은 "다양성과 도전정신, 그�
 나의 여행 철학(?)이다. 꼭 필요한것만 챙겨가고 웬만한건 현지에서 조달함으로써 짐을 줄이는 것을 선호한다. 그리고 없으면 없는대로 잘 사는 경우가 많다. 여행을 하다보면 인간이 삶을 영위하는데 필요한게 의외로 그렇게 많지 않다는 것을 깨닫게 된다.
 
 <figure style="width:60%; max-width:480px;">
-  <img src="/attachments/2016/trip-to-australia/light-baggage.jpg">
+  <img src="/attachments/2016/roadtrip-to-australia/prep/light-baggage.jpg">
   <figcaption>이 가방과 노트북 배낭 하나만 챙겨갔다. 월마트에서 $40 주고 구입한 이 하늘색 가방은 2007년부터 나와 함께 했던 유서 깊은 가방이다.</figcaption>
 </figure>
 
@@ -156,7 +156,7 @@ GEP가 무엇인지에 대한 공식 설명은 "다양성과 도전정신, 그�
 
 ### 전자기기
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Australian_and_New_Zealand_power_socket_with_USB_charger_socket.jpg" class="float-right" style="width:200px;"/>
+<img src="/attachments/2016/roadtrip-to-australia/prep/wall-socket.jpg" class="float-right" style="width:200px;"/>
 
 호주의 가정용 전원은 110V @50Hz 이다. 전원 플러그는 이렇게 생겼다. 한국에서 가져갈 전자기기들을 사용할 수 있도록 [여행용 전원 어댑터](http://www.coupang.com/vp/products/2572702?itemId=11888551&itemsCount=36&rank=1)를 하나 구매했다. USB 포트가 있는 모델을 구입했더라면 더 좋았을 것 같다. 대부분의 전자기기들은 100-240V @50-60Hz 의 교류 전원에서 작동될 수 있도록 만들어져있기 때문에 플러그 모양만 바꿔주면 정상적으로 동작하지만, 간혹 50Hz 에서 동작하지 않는 기기가 있을 수도 있으니 미리 확인하고 가져가면 좋을 것 같다.
 
