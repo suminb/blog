@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-html, body { height: 100%; }
+html, body { height: 100%; line-height: 115%; }
 
 body {
   font-family: Helvetica, Arial, sans-serif;
@@ -192,7 +192,9 @@ a.citation-reference, a.footnote-reference {
 
 .post-content { margin: 0 0 30px; }
 
-.post-content > *, .post-content p { margin: 20px 0; }
+.post-content > *,
+.post-content p,
+.post-content div.line-block { margin: 1em 0; }
 
 .post-content h1,
 .post-content h2,
