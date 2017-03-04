@@ -1,6 +1,15 @@
 Installation
 ============
 
+The following Ruby packages must be installed.
+
+* `jekyll`
+* `jekyll-redirect-from`
+* `jekyll-redirect-to`
+* `jekyll-paginate`
+* `jekyll-rst` (This one cannot be installed via `gem`; refer the below section
+   for further instructions)
+
 Although most articles are written in Markdown, some are written in
 reStructuredText. It requires
 [`jekyll-rst`](https://github.com/xdissent/jekyll-rst) plugin in order to
