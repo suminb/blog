@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 이상한 호주 여행기 - 시작하기 전
+title: 이상한 호주 여행기 - 출발 전날
 categories:
 - Travel
 tags:
