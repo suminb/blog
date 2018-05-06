@@ -4,8 +4,8 @@ title: Impersonation
 post_id: '1756'
 categories:
 - Geeky Stuff
-- Information Security
-- Tutorials
+- Security
+- Tutorial
 tags: []
 status: publish
 type: post

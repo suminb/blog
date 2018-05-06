@@ -4,7 +4,7 @@ title: Downloading Lecture Notes In Batch
 post_id: '1729'
 categories:
 - Geeky Stuff
-- Tutorials
+- Tutorial
 - 생활 코딩 (Casual Coding)
 tags:
 - curl
