@@ -18,7 +18,7 @@ author:
 
 그건 마치 이런 말을 듣는 느낌이다. "님, 이것저것 열심히 입력하느라 수고 많았지만 그건 내가 알 바 아니고 맨 처음에 입력했던게 잘못 돼서 더이상 진행이 안 됨. 처음부터 다시 하던가, 아니면 go fuck yourself."
 
-<img src="/attachments/shinhancard.png" alt="" style="max-width:80%; margin:auto;"/>
+<img src="/attachments/2015/shinhancard.png" alt="" style="max-width:80%; margin:auto;"/>
 
 오늘도 역시 비슷한 문제를 겪었다. 한참동안 신나게 카드 신청 폼을 작성하고 제출하려고 했더니 하루에 하나만 신청할 수 있단다. 아니 그럼 그걸 처음부터 얘기해줘야 할거 아니야! 만약 은행 창구에서 똑같은 일이 벌어졌을 때 고객들의 반응이 어떨지 생각해보면 이게 얼마나 바보같은 일인지 금방 알 수 있을 것이다.
 
