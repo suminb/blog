@@ -1,5 +1,4 @@
-Installation
-============
+## Installation
 
 The following Ruby packages must be installed.
 
@@ -29,11 +28,25 @@ and it can be retrieved by issuing the following command.
 
     git submodule update --init --recursive
 
-Checklist for writing a post
-============================
+## Checklist for writing a post
 
 1. Format file name correctly (`yyyy-mm-dd-title.format`)
 1. Put `page.meta.disqus_identifier`
 1. Categories and tags
   1. For tags, specify in which language the post is written
 1. Author's name
+
+### Categories
+
+- Computer Science
+- Geeky Stuff
+- General
+- Mathematics
+- Programming
+- Review
+- Security
+- Software Engineering
+- Troubleshooting
+- Tutorial
+- 개똥 철학 (Rubbish Philosophy)
+- 생활 코딩 (Casual Coding)
