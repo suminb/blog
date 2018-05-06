@@ -3,7 +3,7 @@ layout: post
 title: Command Line Based ogg to mp3 Converter on Mac OS X
 post_id: '693'
 categories:
-- Tutorials
+- Tutorial
 tags:
 - mac
 - MP3

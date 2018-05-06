@@ -3,7 +3,7 @@ layout: post
 title: 더 나은 번역기 100% 활용 팁
 post_id: '1856'
 categories:
-- Tutorials
+- Tutorial
 tags: []
 status: publish
 type: post

@@ -4,7 +4,7 @@ title: PHP Timer
 post_id: '659'
 categories:
 - Geeky Stuff
-- Tutorials
+- Tutorial
 tags:
 - PHP
 status: publish

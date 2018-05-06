@@ -3,7 +3,7 @@ layout: post
 title: Grocery Store Club Card Imitation
 post_id: '1007'
 categories:
-- Tutorials
+- Tutorial
 tags:
 - experiment
 - Fry's

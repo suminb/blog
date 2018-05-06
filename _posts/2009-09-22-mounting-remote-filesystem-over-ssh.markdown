@@ -4,7 +4,7 @@ title: Mounting Remote Filesystem over SSH
 post_id: '1179'
 categories:
 - Geeky Stuff
-- Tutorials
+- Tutorial
 tags:
 - linux
 - SSH
