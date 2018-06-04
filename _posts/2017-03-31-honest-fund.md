@@ -107,8 +107,8 @@ P2P 투자가 전통적인 투자 수단과 비교하여 가지는 약점이 하
 
 조금 전에 P2P 투자의 단점에 대해 다소 부정적인 어감으로 이야기 하긴 했지만, P2P 투자가 매력적인 투자처임을 부정하는 것은 아니다. 다만, 나와 같은 투자자들이 P2P 채권 투자에 동반되는 위험을 정확히 인지하고 투자를 시작했으면 하는 바람이 있다. 높은 수익률에는 필연적으로 높은 위험이 따른다는 점, 그리고 변동성을 줄이기 위해서는 반드시 적정한 수준의 분산 투자가 필수적이라는 부분을 다시 한 번 강조하면서 이 글을 마친다.
 
-[^1]: "Consumer Information." *[If Your Mortgage Lender or Servicer Is Closing or in Bankruptcy](www.consumer.ftc.gov/articles/0191-if-your-mortgage-lender-or-servicer-closing-or-bankruptcy)*, Federal Trade Comission, Dec. 2007.
-[^2]: 안 재만. *[[신용평가의 진화] 빅데이터의 묘기 "대출받는 걸 와이프가 알고 있나요?"](biz.chosun.com/site/data/html_dir/2015/06/09/2015060902804.html)*. 조선비즈, 10 June 2015.
+[^1]: "Consumer Information." *[If Your Mortgage Lender or Servicer Is Closing or in Bankruptcy](http://www.consumer.ftc.gov/articles/0191-if-your-mortgage-lender-or-servicer-closing-or-bankruptcy)*, Federal Trade Comission, Dec. 2007.
+[^2]: 안 재만. *[[신용평가의 진화] 빅데이터의 묘기 "대출받는 걸 와이프가 알고 있나요?"](http://biz.chosun.com/site/data/html_dir/2015/06/09/2015060902804.html)*. 조선비즈, 10 June 2015.
 [^3]: 장기연체 개인회생채권에 대한 어니스트펀드의 설명: 120일 이상 장기연체 개인회생채권은 당사정책에 의해 미상환원금의 50%의 가액으로 채권을 매각하며, 이에 따라 본 채권은 미상환원금의 50%의 가액으로 매각되었음. 매각대금은 4월 포트폴리오 상환일에 같이 지급될 예정.
 
 <!--
