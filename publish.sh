@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Fail on error
+set -e
+
 TARGET_REPO="git@github.com:suminb/blog-pub.git"
 BUILD_DIR=_site
 LAST_COMMIT_MESSAGE=$(git log -1 --pretty=%B)
