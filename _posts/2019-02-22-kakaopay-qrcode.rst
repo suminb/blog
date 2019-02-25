@@ -41,8 +41,8 @@ title: 카카오페이 QR 코드 리버스 엔지니어링
 않지만, 필요 없는 물건들을 과감하게 정리하는 것이 답이다. 아직 그것만큼 효과적인
 인테리어 개선 방법을 찾지 못했다.
 
-.. figure:: /attachments/2019/kakaopay-qrcode/dollar-auction.png
-   :width: 50%
+.. figure:: /attachments/2019/kakaopay-qrcode/dollar-auction.jpg
+   :width: 80%
 
 그래서 요즘 `천원경매 <https://1000won.auction>`_\ 에 사용하지 않는 물건들을
 하나둘씩 내다 팔고 있다. 천원경매는 사내 장터에서 경매로 물건을 팔기 위해 직접
