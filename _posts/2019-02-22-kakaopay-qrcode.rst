@@ -295,7 +295,7 @@ QR 코드를 만들어 낼 차례이다.
 것을 확인할 수 있었다.
 
 .. image:: /attachments/2019/kakaopay-qrcode/kakaopay.png
-   :width: 240px
+   :width: 320px
 
 마무리
 ------
