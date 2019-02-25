@@ -4,9 +4,9 @@ email: suminb@gmail.com
 description: "This statement is false."
 baseurl: ""
 url: "http://philosophical.one"
-permalink: /post/:title/
+permalink: /posts/:title/
 paginate: 15
-paginate_path: /page/:num
+paginate_path: /pages/:num
 google_analytics_id: UA-346833-1
 disqus: true
 username: suminb
