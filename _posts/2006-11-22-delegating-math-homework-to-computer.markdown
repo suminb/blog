@@ -1,25 +1,26 @@
 ---
-layout: post
-title: 수학 숙제는 컴퓨터에게
-post_id: '425'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Mathematics
 - 생활 코딩 (Casual Coding)
-tags: []
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '287065528'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '425'
+published: true
 redirect_from:
-  - /archives/425/
+- /archives/425/
+- /post/delegating-math-homework-to-computer
+status: publish
+tags: []
+title: 수학 숙제는 컴퓨터에게
+type: post
 ---
 > Consider the differential equation
 >

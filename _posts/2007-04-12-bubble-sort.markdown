@@ -1,25 +1,26 @@
 ---
-layout: post
-title: Bubble Sort
-post_id: '598'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Computer Science
-tags:
-- bubble sort
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '287066378'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '598'
+published: true
 redirect_from:
-  - /archives/598/
+- /archives/598/
+- /post/bubble-sort
+status: publish
+tags:
+- bubble sort
+title: Bubble Sort
+type: post
 ---
 ### Bubble Sort (Ascending Order)
 

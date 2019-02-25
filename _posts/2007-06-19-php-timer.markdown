@@ -1,26 +1,27 @@
 ---
-layout: post
-title: PHP Timer
-post_id: '659'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Geeky Stuff
 - Tutorial
-tags:
-- PHP
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '287065481'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '659'
+published: true
 redirect_from:
-  - /archives/659/
+- /archives/659/
+- /post/php-timer
+status: publish
+tags:
+- PHP
+title: PHP Timer
+type: post
 ---
 ## Introduction
 

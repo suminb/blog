@@ -1,26 +1,27 @@
 ---
-layout: post
-title: 컴퓨터 과학(Computer Science)에 대한 고찰 2
-post_id: '1811'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Computer Science
 - 개똥 철학 (Rubbish Philosophy)
-tags:
-- korean
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
-  dsq_thread_id: '1166839551'
   _thumbnail_id: '1829'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+  dsq_thread_id: '1166839551'
+post_id: '1811'
+published: true
 redirect_from:
-  - /archives/1811/
+- /archives/1811/
+- /post/thoughts-about-computer-science-2
+tags:
+- korean
+title: 컴퓨터 과학(Computer Science)에 대한 고찰 2
+type: post
 ---
 시작하기 전에 만화를 한 편 보자.
 

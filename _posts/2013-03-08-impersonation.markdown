@@ -1,27 +1,28 @@
 ---
-layout: post
-title: Impersonation
-post_id: '1756'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Geeky Stuff
 - Security
 - Tutorial
-tags: []
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
-  dsq_thread_id: '1124689136'
   _thumbnail_id: '1763'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+  dsq_thread_id: '1124689136'
+post_id: '1756'
+published: true
 redirect_from:
-  - /archives/1756/
+- /archives/1756/
+- /post/impersonation
+status: publish
+tags: []
+title: Impersonation
+type: post
 ---
 내가 대학 학부생이었던 시절의 이야기이다. 일 때문에 잠시 다른 도시에 갔다가 집에 돌아오는 길이었다. 이메일을 확인하려고 내 노트북을 공항에서 제공하는 와이파이 핫스팟에 연결했는데 사용료를 내라는 것이 아닌가. 정확한 금액은 잘 기억이 안 나는데, 대략 $12-15 정도였던 것으로 기억한다. 가난한 학부생이었던 나는 "이 돈이면 빅맥 세트가 두 개인데" 하는 생각과 함께 큰 고민에 빠졌다.
 

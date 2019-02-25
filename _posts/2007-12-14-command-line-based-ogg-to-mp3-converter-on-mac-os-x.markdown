@@ -1,28 +1,29 @@
 ---
-layout: post
-title: Command Line Based ogg to mp3 Converter on Mac OS X
-post_id: '693'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Tutorial
+layout: post
+meta:
+  _edit_last: '1'
+  dsq_thread_id: '287066210'
+post_id: '693'
+published: true
+redirect_from:
+- /archives/693/
+- /post/command-line-based-ogg-to-mp3-converter-on-mac-os-x
+status: publish
 tags:
 - mac
 - MP3
 - OGG
 - OSX
-status: publish
+title: Command Line Based ogg to mp3 Converter on Mac OS X
 type: post
-published: true
-meta:
-  _edit_last: '1'
-  dsq_thread_id: '287066210'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
-redirect_from:
-  - /archives/693/
 ---
 First of all, you need to install `vorbis-tools` and `lame`, assuming you have [MacPorts](http://www.macports.org/) installed. If you're using some other package management system, that's fine. Go ahead and install these two packages. If you don't have any, you can always manually install it.
 

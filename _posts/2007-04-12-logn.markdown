@@ -1,25 +1,26 @@
 ---
-layout: post
-title: log(N)
-post_id: '597'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Computer Science
-tags:
-- hash
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '287066360'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '597'
+published: true
 redirect_from:
-  - /archives/597/
+- /archives/597/
+- /post/logn
+status: publish
+tags:
+- hash
+title: log(N)
+type: post
 ---
 CS345 이번 과제는 여러가지 해시 알고리즘을 직접 구현하는것이었다.
 

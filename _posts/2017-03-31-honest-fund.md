@@ -1,17 +1,19 @@
 ---
-layout: post
-title: 레이니스트 핀테크 체험 - 어니스트펀드
-categories:
-- Finance
-- Review
-tags:
-published: true
-draft: true
-meta:
 author:
   email: suminb@gmail.com
   first_name: Sumin
   last_name: Byeon
+categories:
+- Finance
+- Review
+draft: true
+layout: post
+meta: null
+published: true
+redirect_from:
+- /post/honest-fund
+tags: null
+title: 레이니스트 핀테크 체험 - 어니스트펀드
 ---
 
 <!--

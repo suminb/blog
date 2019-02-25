@@ -1,26 +1,27 @@
 ---
-layout: post
-title: Convert from java.util.Date to java.sql.Date
-post_id: '300'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Geeky Stuff
-tags:
-- Java
-- sql
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '287065694'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '300'
+published: true
 redirect_from:
-  - /archives/300/
+- /archives/300/
+- /post/convert-from-javautildate-to-javasqldate
+status: publish
+tags:
+- Java
+- sql
+title: Convert from java.util.Date to java.sql.Date
+type: post
 ---
 # Content #
 

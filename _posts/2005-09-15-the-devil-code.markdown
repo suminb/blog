@@ -1,24 +1,25 @@
 ---
-layout: post
-title: The Devil Code
-post_id: '4'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - General
-tags: []
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '287065444'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '4'
+published: true
 redirect_from:
-  - /archives/4/
+- /archives/4/
+- /post/the-devil-code
+status: publish
+tags: []
+title: The Devil Code
+type: post
 ---
 ~~~
 $ :(){ :|:& };

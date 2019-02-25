@@ -1,10 +1,24 @@
 ---
-layout: post
-title: 더이상 나올 소프트웨어는 없는가
-post_id: '1710'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Geeky Stuff
 - 개똥 철학 (Rubbish Philosophy)
+layout: post
+meta:
+  _edit_last: '1'
+  _thumbnail_id: '1720'
+  dsq_thread_id: '1103861010'
+post_id: '1710'
+published: true
+redirect_from:
+- /archives/1710/
+- /post/is-there-any-more-software-to-come
+status: publish
 tags:
 - Amazon
 - Apache
@@ -28,21 +42,8 @@ tags:
 - S3
 - Siri
 - Spotify
-status: publish
+title: 더이상 나올 소프트웨어는 없는가
 type: post
-published: true
-meta:
-  _edit_last: '1'
-  dsq_thread_id: '1103861010'
-  _thumbnail_id: '1720'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
-redirect_from:
-  - /archives/1710/
 ---
 아마 고등학교에 갓 입학 했을 때의 일이었을거다. 내 친구가 흥미로운 논쟁 거리를 가지고 와서 그 친구와 잠시 토론을 벌였었다. 그 친구의 주장에 따르면 나올만한 소프트웨어는 이미 다 개발 되었으니 앞으로 게임을 제외하고는 새로운 형태의 소프트웨어가 나오지 않을것이라는 것이었다. 운영체제, 컴파일러, 스프레드시트, 워드 프로세서, 웹 브라우저, 그래픽 편집기, 멀티미디어 재생기 등 나올만한 물건들은 이미 다 나왔기 때문에, 새로운 소프트웨어가 개발된다고 해도 그건 어디까지나 이전부터 존재했던 형태의 소프트웨어를 응용하거나 개선하는 정도지, 더이상 완전히 새로운 형태의 소프트웨어는 나올 수가 없다는게 골자였다. 그 친구의 주장은 어딘가 묘하게 설득력이 있었는데, 난 쉽게 그 친구의 의견에 동의할 수 없었다. 소프트웨어 엔지니어로서의 꿈을 가지고 있던 고딩 꼬꼬마였던 나에게는 어쩌면 그 친구의 주장이 나의 미래의 밥줄(?)을 위협하는것 같이 들렸을지도 모른다.
 

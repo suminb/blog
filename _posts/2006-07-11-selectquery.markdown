@@ -1,24 +1,25 @@
 ---
-layout: post
-title: SelectQuery
-post_id: '378'
-categories:
-- Software Engineering
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  dsq_thread_id: '287065171'
-  _edit_last: '1'
 author:
-  login: admin
-  email: suminb@gmail.com
   display_name: Sumin
+  email: suminb@gmail.com
   first_name: Sumin
   last_name: Byeon
+  login: admin
+categories:
+- Software Engineering
+layout: post
+meta:
+  _edit_last: '1'
+  dsq_thread_id: '287065171'
+post_id: '378'
+published: true
 redirect_from:
-  - /archives/378/
+- /archives/378/
+- /post/selectquery
+status: publish
+tags: []
+title: SelectQuery
+type: post
 ---
 홍민희군과의 대화 중 아이디어를 얻어 이것을 만들게 되었다.
 

@@ -1,20 +1,22 @@
 ---
-layout: post
-title: 이상한 호주 여행기 - 비용 정산
-categories:
-- Travel
-- Mathematics
-tags:
-- australia
-- dynamic programming
-- python
-published: true
-draft: false
-meta:
 author:
   email: suminb@gmail.com
   first_name: Sumin
   last_name: Byeon
+categories:
+- Travel
+- Mathematics
+draft: false
+layout: post
+meta: null
+published: true
+redirect_from:
+- /post/roadtrip-in-australia-financial-settlement
+tags:
+- australia
+- dynamic programming
+- python
+title: 이상한 호주 여행기 - 비용 정산
 ---
 
 NOTE: 여행중 남긴 기록들을 토대로 열심히 여행기를 작성하고 있는데, 사실 이 글이 여행기의 마지막편이다. 마지막편을 가장 먼저 공개하게 되어서 유감이지만 완성도가 낮은 글을 공개하기는 곤란하다고 판단했다. 지금 나의 친구들과 동료들이 열심히 리뷰해주고 있으니, 리뷰 코멘트를 반영해서 완성되는대로 한편씩 차례대로 공개할 생각이다.

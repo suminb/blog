@@ -1,30 +1,31 @@
 ---
-layout: post
-title: Programmers' Way To Vote On Doodle
-post_id: '1327'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Geeky Stuff
 - 생활 코딩 (Casual Coding)
+layout: post
+meta:
+  _edit_last: '1'
+  _wp_old_slug: ''
+  dsq_thread_id: '287065018'
+post_id: '1327'
+published: true
+redirect_from:
+- /archives/1327/
+- /post/programmers-way-to-vote-on-doodle
+status: publish
 tags:
 - doodle
 - Google
 - jquery
 - safari
-status: publish
+title: Programmers' Way To Vote On Doodle
 type: post
-published: true
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-  dsq_thread_id: '287065018'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
-redirect_from:
-  - /archives/1327/
 ---
 [Doodle](http://doodle.com) is a great tool for organizing meetings and scheduling events, especially when attendees have largely different schedules.
 

@@ -1,27 +1,28 @@
 ---
-layout: post
-title: Iterator 패턴에 관한 고찰
-post_id: '306'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Software Engineering
+layout: post
+meta:
+  _edit_last: '1'
+  dsq_thread_id: '287065725'
+post_id: '306'
+published: true
+redirect_from:
+- /archives/306/
+- /post/thoughts-about-iterator-pattern
+status: publish
 tags:
 - design pattern
 - iterator
 - Java
-status: publish
+title: Iterator 패턴에 관한 고찰
 type: post
-published: true
-meta:
-  _edit_last: '1'
-  dsq_thread_id: '287065725'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
-redirect_from:
-  - /archives/306/
 ---
 # 서론
 

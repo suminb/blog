@@ -1,15 +1,17 @@
 ---
-layout: post
-title: 독후감 - 월급전쟁
-categories:
-- Review
-tags: []
-published: true
-meta:
 author:
   email: suminb@gmail.com
   first_name: Sumin
   last_name: Byeon
+categories:
+- Review
+layout: post
+meta: null
+published: true
+redirect_from:
+- /post/salary-war
+tags: []
+title: 독후감 - 월급전쟁
 ---
 
 <img src="http://image.yes24.com/goods/7539231/M" alt="월급전쟁" class="center"/>

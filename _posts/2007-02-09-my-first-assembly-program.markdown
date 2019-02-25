@@ -1,25 +1,26 @@
 ---
-layout: post
-title: 나의 첫 어셈블리 프로그램
-post_id: '555'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Geeky Stuff
-tags:
-- mips
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '287065524'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '555'
+published: true
 redirect_from:
-  - /archives/555/
+- /archives/555/
+- /post/my-first-assembly-program
+status: publish
+tags:
+- mips
+title: 나의 첫 어셈블리 프로그램
+type: post
 ---
 ~~~
 .data

@@ -1,16 +1,18 @@
 ---
-layout: post
-title: 이상한 호주 여행기 - 둘째 날 (상)
-categories:
-- Travel
-tags:
-- australia
-published: true
-meta:
 author:
   email: suminb@gmail.com
   first_name: Sumin
   last_name: Byeon
+categories:
+- Travel
+layout: post
+meta: null
+published: true
+redirect_from:
+- /post/roadtrip-in-australia-day2-1
+tags:
+- australia
+title: 이상한 호주 여행기 - 둘째 날 (상)
 ---
 
 시드니에서 맞이하는 아침

@@ -1,24 +1,26 @@
 ---
-layout: post
-title: Double SSH Tunneling
-post_id: '1318'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Tutorial
-tags:
-- SSH
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   _wp_old_slug: ''
   dsq_thread_id: '287066124'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '1318'
+published: true
+redirect_from:
+- /post/double-ssh-tunneling
+status: publish
+tags:
+- SSH
+title: Double SSH Tunneling
+type: post
 ---
 This is just a self-reminder.
 

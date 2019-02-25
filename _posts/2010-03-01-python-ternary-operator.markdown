@@ -1,25 +1,26 @@
 ---
-layout: post
-title: Python Ternary Operator
-post_id: '1236'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Software Engineering
-tags:
-- Python
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '287066565'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '1236'
+published: true
 redirect_from:
-  - /archives/1236/
+- /archives/1236/
+- /post/python-ternary-operator
+status: publish
+tags:
+- Python
+title: Python Ternary Operator
+type: post
 ---
 I've been using a tuple as a substitution of a ternary operator in Python. Even though it is not exactly a ternary operator and has some drawbacks, but it works fine in most cases.
 

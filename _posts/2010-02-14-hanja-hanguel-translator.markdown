@@ -1,27 +1,28 @@
 ---
-layout: post
-title: 한자-한글 변환
-post_id: '1230'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Software Engineering
+layout: post
+meta:
+  _edit_last: '1'
+  dsq_thread_id: '287064900'
+post_id: '1230'
+published: true
+redirect_from:
+- /archives/1230/
+- /post/hanja-hanguel-translator
+status: publish
 tags:
 - Python
 - 한글
 - 한자
-status: publish
+title: 한자-한글 변환
 type: post
-published: true
-meta:
-  _edit_last: '1'
-  dsq_thread_id: '287064900'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
-redirect_from:
-  - /archives/1230/
 ---
 [한자-한글 변환기][link] (<http://hanja.suminb.com>)
 

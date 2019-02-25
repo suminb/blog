@@ -1,27 +1,28 @@
 ---
-layout: post
-title: 한글 자소 분리
-post_id: '353'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Software Engineering
+layout: post
+meta:
+  _edit_last: '1'
+  _wp_old_slug: '%ed%95%9c%ea%b8%80-%ec%9e%90%ec%86%8c-%eb%b6%84%eb%a6%ac-%eb%98%a0%eb%b0%a9%ea%b0%81%ed%95%98%eb%a5%bc-%e3%84%b8%e3%85%97%e3%85%81%e3%85%82%e3%85%8f%e3%85%87%e3%84%b1%e3%85%8f%e3%84%b1%e3%85%8e%e3%85'
+  dsq_thread_id: '287066518'
+post_id: '353'
+published: true
+redirect_from:
+- /archives/353/
+- /post/hangul-jaso
+status: publish
 tags:
 - Java
 - 한글
-status: publish
+title: 한글 자소 분리
 type: post
-published: true
-meta:
-  _edit_last: '1'
-  dsq_thread_id: '287066518'
-  _wp_old_slug: '%ed%95%9c%ea%b8%80-%ec%9e%90%ec%86%8c-%eb%b6%84%eb%a6%ac-%eb%98%a0%eb%b0%a9%ea%b0%81%ed%95%98%eb%a5%bc-%e3%84%b8%e3%85%97%e3%85%81%e3%85%82%e3%85%8f%e3%85%87%e3%84%b1%e3%85%8f%e3%84%b1%e3%85%8e%e3%85'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
-redirect_from:
-  - /archives/353/
 ---
 [link1]: http://mwultong.blogspot.com/2006/03/perl.html "[Perl/펄] 한글 자소 분리: '똠방각하'를 'ㄸㅗㅁㅂㅏㅇㄱㅏㄱㅎㅏ'로 자동 변환"
 

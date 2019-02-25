@@ -1,17 +1,19 @@
 ---
-layout: post
-title: 한국 도로명 주소 체계의 문제점
-categories:
-- 개똥철학 (rubbish philosophy)
-tags: []
-status: publish
-type: post
-published: false
-meta:
 author:
   email: suminb@gmail.com
   first_name: Sumin
   last_name: Byeon
+categories:
+- 개똥철학 (rubbish philosophy)
+layout: post
+meta: null
+published: false
+redirect_from:
+- /post/issues-with-korean-postal-address-system
+status: publish
+tags: []
+title: 한국 도로명 주소 체계의 문제점
+type: post
 ---
 
 도로명 주소는 한국 정부가 (언제)부터 야심차기 준비해서 (언제) 전면 실행에 옮긴 대한민국의 새로운 주소 체계이다.

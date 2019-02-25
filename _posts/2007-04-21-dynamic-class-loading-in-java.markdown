@@ -1,25 +1,26 @@
 ---
-layout: post
-title: Java 동적 클래스 로드
-post_id: '600'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Geeky Stuff
-tags:
-- Java
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '287065953'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '600'
+published: true
 redirect_from:
-  - /archives/600//
+- /archives/600//
+- /post/dynamic-class-loading-in-java
+status: publish
+tags:
+- Java
+title: Java 동적 클래스 로드
+type: post
 ---
 PHP 에선 다음과 같은 다소 황당한 문법도 통한다.
 

@@ -1,27 +1,28 @@
 ---
-layout: post
-title: 'Programming Contest: 4-function Calculator'
-post_id: '1222'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Geeky Stuff
+layout: post
+meta:
+  _edit_last: '1'
+  dsq_thread_id: '287065034'
+post_id: '1222'
+published: true
+redirect_from:
+- /archives/1222/
+- /post/programming-contest-4-function-calculator
+status: publish
 tags:
 - Google
 - pymt
 - Python
-status: publish
+title: 'Programming Contest: 4-function Calculator'
 type: post
-published: true
-meta:
-  _edit_last: '1'
-  dsq_thread_id: '287065034'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
-redirect_from:
-  - /archives/1222/
 ---
 Today's programming contest, sponsored by Jude Nelson, was to make a 4-function calculator using PyMT. There were some extra credits for additional features such as support for trigonometric functions, parenthesis for changing orders of operations, and so on.
 

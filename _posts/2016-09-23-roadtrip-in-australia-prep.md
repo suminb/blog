@@ -1,16 +1,18 @@
 ---
-layout: post
-title: 이상한 호주 여행기 - 출발 전날
-categories:
-- Travel
-tags:
-- australia
-published: true
-meta:
 author:
   email: suminb@gmail.com
   first_name: Sumin
   last_name: Byeon
+categories:
+- Travel
+layout: post
+meta: null
+published: true
+redirect_from:
+- /post/roadtrip-in-australia-prep
+tags:
+- australia
+title: 이상한 호주 여행기 - 출발 전날
 ---
 
 2016년 9월 25일부터 10월 6일까지 총 12일간 호주 여행을 다녀왔다. 시드니 공항에 내려서 팜 코브까지 총 5,500km를 달리면서 8개의 도시를 거쳐가는 여행이었다. 여행 그 자체로도 충분히 만족스러웠지만, 시간이 지남에 따라 희미해지는 기억 속에만 남겨두기 아까워 여행에서 보고 느꼈던 것들을 글로 기록해보고자 한다.

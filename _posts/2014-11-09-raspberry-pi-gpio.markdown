@@ -1,21 +1,23 @@
 ---
-layout: post
-title: 라즈베리 파이의 GPIO를 이용하여 LED 조작하기
-post_id: '1920'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
 categories:
 - Geeky Stuff
+layout: post
+meta: null
+post_id: '1920'
+published: true
+redirect_from:
+- /post/raspberry-pi-gpio
+status: publish
 tags:
 - Raspberry Pi
 - LED
-status: publish
+title: 라즈베리 파이의 GPIO를 이용하여 LED 조작하기
 type: post
-published: true
-meta:
-author:
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
 ---
 
 주말을 알차게 보내기 위해 초간단 프로젝트를 준비해보았다. 바로 라즈베리 파이의 GPIO 핀을 이용해서 코드상에서 LED를 켜고 끌 수 있게 만드는 것.

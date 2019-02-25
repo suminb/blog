@@ -1,18 +1,20 @@
 ---
-layout: post
-title: 스포카 코드 난독화 컨테스트 2016
-categories:
-- Programming
-tags:
-- pycon
-- spoqa
-- obfuscation
-published: true
-meta:
 author:
   email: suminb@gmail.com
   first_name: Sumin
   last_name: Byeon
+categories:
+- Programming
+layout: post
+meta: null
+published: true
+redirect_from:
+- /post/spoqa-pycon-2016-obfuscation-contest
+tags:
+- pycon
+- spoqa
+- obfuscation
+title: 스포카 코드 난독화 컨테스트 2016
 ---
 
 [스포카](http://www.spoqa.com)의 작년 코딩 대회 주제가 주어진 일을 가장 짧은 코드로 해내는 사람이 우승하는 '코드 골프'였다면 올해는 코드를 최대한 알아보기 어렵게 만드는 '난독화'이다. [난독화 대회 페이지](https://github.com/spoqa/spoqa-pycon-2016-obfuscation-contest)에도 나와있긴 하지만, 제출할 코드의 조건은 다음과 같다.

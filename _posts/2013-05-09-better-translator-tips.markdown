@@ -1,25 +1,26 @@
 ---
-layout: post
-title: 더 나은 번역기 100% 활용 팁
-post_id: '1856'
-categories:
-- Tutorial
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '1'
-  dsq_thread_id: '1276690336'
-  _thumbnail_id: '1881'
 author:
-  login: admin
-  email: suminb@gmail.com
   display_name: Sumin
+  email: suminb@gmail.com
   first_name: Sumin
   last_name: Byeon
+  login: admin
+categories:
+- Tutorial
+layout: post
+meta:
+  _edit_last: '1'
+  _thumbnail_id: '1881'
+  dsq_thread_id: '1276690336'
+post_id: '1856'
+published: true
 redirect_from:
-  - /archives/1856/
+- /archives/1856/
+- /post/better-translator-tips
+status: publish
+tags: []
+title: 더 나은 번역기 100% 활용 팁
+type: post
 ---
 [더 나은 번역기][translator]는 완벽한 번역기가 아닙니다. 여러분이 보는 번역 결과물은 번역기가 실제로 자연어를 이해하고 번역한 것이 아니라, 방대한 양의 실증적(empirical) 데이터로부터 추측한 근사치(approximation)일 뿐입니다. 복잡한 문장보다는 간결하고 명확한 문장을 사용한다면 조금 더 괜찮은 결과를 얻을 수 있습니다.
 

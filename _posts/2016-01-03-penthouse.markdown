@@ -1,15 +1,17 @@
 ---
-layout: post
-title: 95억짜리 펜트하우스
-categories:
-- 개똥 철학 (Rubbish Philosophy)
-tags:
-published: true
-meta:
 author:
   email: suminb@gmail.com
   first_name: Sumin
   last_name: Byeon
+categories:
+- 개똥 철학 (Rubbish Philosophy)
+layout: post
+meta: null
+published: true
+redirect_from:
+- /post/penthouse
+tags: null
+title: 95억짜리 펜트하우스
 ---
 
 이 글을 읽기 전에 일단 관련 기사문을 먼저 읽어보자. ['95억'...삼성동 아이파크 펜트하우스, 역대 최고 감정가 공매로 나와](http://land.hankyung.com/news/app/newsview.php?aid=2016010116881)

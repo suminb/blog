@@ -1,25 +1,26 @@
 ---
-layout: post
-title: JavaBeans
-post_id: '301'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Geeky Stuff
-tags:
-- Java
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '287066194'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '301'
+published: true
 redirect_from:
-  - /archives/301/
+- /archives/301/
+- /post/javabeans
+status: publish
+tags:
+- Java
+title: JavaBeans
+type: post
 ---
 # What are JavaBeans? #
 JavaBeans are software components written in the Java programming language. Well, this kind of explanation probably would not be helpful.

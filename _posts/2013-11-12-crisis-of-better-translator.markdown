@@ -1,22 +1,24 @@
 ---
-layout: post
-title: 더 나은 번역기의 위기
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Software Engineering
 - Troubleshooting
-tags: []
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '1967235215'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+published: true
+redirect_from:
+- /post/crisis-of-better-translator
+status: publish
+tags: []
+title: 더 나은 번역기의 위기
+type: post
 ---
 [더 나은 번역기][btr] 장사 망할뻔 했다.
 

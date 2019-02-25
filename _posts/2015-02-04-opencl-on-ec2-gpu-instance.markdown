@@ -1,18 +1,20 @@
 ---
-layout: post
-title: Amazon EC2 GPU 인스턴스에서 OpenCL 사용하기
-categories:
-- Programming
-- Tutorial
-tags: []
-status: publish
-type: post
-published: false
-meta:
 author:
   email: suminb@gmail.com
   first_name: Sumin
   last_name: Byeon
+categories:
+- Programming
+- Tutorial
+layout: post
+meta: null
+published: false
+redirect_from:
+- /post/opencl-on-ec2-gpu-instance
+status: publish
+tags: []
+title: Amazon EC2 GPU 인스턴스에서 OpenCL 사용하기
+type: post
 ---
 
 아마존 EC2 GPU 인스턴스에서 OpenCL 실행 환경을 구축하면서 해결한 문제들을 정리해보았다.

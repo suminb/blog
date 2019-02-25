@@ -1,26 +1,27 @@
 ---
-layout: post
-title: Finding Gram Matrix
-post_id: '1196'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Mathematics
-tags:
-- linear algebra
-- Python
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '287065411'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '1196'
+published: true
 redirect_from:
-  - /archives/1196/
+- /archives/1196/
+- /post/finding-gram-matrix
+status: publish
+tags:
+- linear algebra
+- Python
+title: Finding Gram Matrix
+type: post
 ---
 Matrix manipulation by hand is often times pain in the neck when it comes to anything bigger than 2 by 2 matrices as it involves a quite amount of arithmetic operations. Well, I've got an Intel Core 2 Duo processor and Python. No reason not to take advantage of them ;-)
 

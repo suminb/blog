@@ -1,26 +1,27 @@
 ---
-layout: post
-title: Calculation of PI using Python
-post_id: '894'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Geeky Stuff
-tags:
-- pi
-- Python
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '287065226'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '894'
+published: true
 redirect_from:
-  - /archives/894/
+- /archives/894/
+- /post/getting-the-value-of-pi-using-python
+status: publish
+tags:
+- pi
+- Python
+title: Calculation of PI using Python
+type: post
 ---
 I barely started using Python today. I made a piece of code that calculates the value of PI for practice. You're welcome to criticize, but *politely*, my first ever Python code.
 

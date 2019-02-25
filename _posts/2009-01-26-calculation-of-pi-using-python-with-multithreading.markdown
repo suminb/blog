@@ -1,27 +1,28 @@
 ---
-layout: post
-title: Calculation of PI using Python with multithreading
-post_id: '911'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Geeky Stuff
+layout: post
+meta:
+  _edit_last: '1'
+  dsq_thread_id: '287065169'
+post_id: '911'
+published: true
+redirect_from:
+- /archives/911/
+- /post/calculation-of-pi-using-python-with-multithreading
+status: publish
 tags:
 - multithreading
 - pi
 - Python
-status: publish
+title: Calculation of PI using Python with multithreading
 type: post
-published: true
-meta:
-  _edit_last: '1'
-  dsq_thread_id: '287065169'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
-redirect_from:
-  - /archives/911/
 ---
 So, I made another version of PI calculation code with multithreading, expecting faster calculations since my MacBook has two processor cores. However, it works slower than the sequential version. I don't know wtf is going on.
 

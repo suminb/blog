@@ -1,8 +1,16 @@
 ---
-layout: post
-title: 개인 위키 프로젝트
+author:
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
 categories:
 - Geeky Stuff
+draft: false
+layout: post
+meta: null
+published: true
+redirect_from:
+- /post/personal-wiki
 tags:
 - wiki
 - evernote
@@ -11,13 +19,7 @@ tags:
 - google keep
 - trello
 - gitlab
-published: true
-draft: false
-meta:
-author:
-  email: suminb@gmail.com
-  first_name: Sumin
-  last_name: Byeon
+title: 개인 위키 프로젝트
 ---
 
 "역사를 잊은 민족에게 미래는 없다" 라는 말이 있다. 사실 이 말의 출처는 불분명하다.[^4] 하지만 이 말의 속 뜻이 "역사적 기록을 보존하고, 그것으로부터 교훈을 얻고 실수를 반복하지 않는 것이 중요하다" 라면 나는 그 말에 동의한다. 그건 국가 단위에서 뿐만 아니라 개인에게도 마찬가지다. 아주 잘 하고 있지는 못하지만, 그래도 시간과 자원이 허락하는 한 생활의 모든 부분에 있어서 문서화를 잘 하려고 노력하는 편이다. 체계적인 문서화가 어렵다면 단편적인 정보(이메일, 노트, 녹취록 등)라도 남기려고 한다.

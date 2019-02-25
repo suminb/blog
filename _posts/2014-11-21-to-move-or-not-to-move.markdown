@@ -1,18 +1,20 @@
 ---
-layout: post
-title: 이사를 가느냐 마느냐, 그것이 문제로다
-categories:
-- Casual Coding (생활 코딩)
-tags:
-status: publish
-type: post
-published: true
-meta:
 author:
-  email: suminb@gmail.com
   display_name: Sumin
+  email: suminb@gmail.com
   first_name: Sumin
   last_name: Byeon
+categories:
+- Casual Coding (생활 코딩)
+layout: post
+meta: null
+published: true
+redirect_from:
+- /post/to-move-or-not-to-move
+status: publish
+tags: null
+title: 이사를 가느냐 마느냐, 그것이 문제로다
+type: post
 ---
 
 오늘 [흥미로운 기사][기사]를 보았다. 다름이 아니라 수도권 지역의 살인적인 출퇴근 시간에 대한 기사였는데, 내가 한국에 와서 몇개월간 부모님 집에 얹혀 살면서 선릉역 근처로 출퇴근 하면서 느꼈던 불편함을 잘 표현한 글이어서 눈길이 갔다. 그때는 편도 출퇴근 시간(door-to-door)이 1시간에서 1시간 15분 정도였다. 애리조나에 살면서 통근 시간으로 20분 이상 써본적이 없던 나로서는 지옥같은 경험이었다.

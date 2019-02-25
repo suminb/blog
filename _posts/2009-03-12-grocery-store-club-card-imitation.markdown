@@ -1,27 +1,28 @@
 ---
-layout: post
-title: Grocery Store Club Card Imitation
-post_id: '1007'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Tutorial
+layout: post
+meta:
+  _edit_last: '1'
+  dsq_thread_id: '287066540'
+post_id: '1007'
+published: true
+redirect_from:
+- /archives/1007/
+- /post/grocery-store-club-card-imitation
+status: publish
 tags:
 - experiment
 - Fry's
 - Safeway
-status: publish
+title: Grocery Store Club Card Imitation
 type: post
-published: true
-meta:
-  _edit_last: '1'
-  dsq_thread_id: '287066540'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
-redirect_from:
-  - /archives/1007/
 ---
 Introduction
 ------------

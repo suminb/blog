@@ -1,28 +1,29 @@
 ---
-layout: post
-title: Permutation Generation
-post_id: '1119'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Computer Science
+layout: post
+meta:
+  _edit_last: '1'
+  dsq_thread_id: '287065458'
+post_id: '1119'
+published: true
+redirect_from:
+- /archives/1119/
+- /post/permutation-generation
+status: publish
 tags:
 - haskell
 - math
 - Python
 - recursion
-status: publish
+title: Permutation Generation
 type: post
-published: true
-meta:
-  _edit_last: '1'
-  dsq_thread_id: '287065458'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
-redirect_from:
-  - /archives/1119/
 ---
 Someone asked me how to generate all possible permutations out of a given set and I thought it was kind of interesting to think about it. I was able to come up with a general solution pretty easily (thanks to all the algorithm and math classes I took!) and I would like to share it with everyone.
 

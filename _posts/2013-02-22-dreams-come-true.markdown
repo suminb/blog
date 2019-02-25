@@ -1,21 +1,23 @@
 ---
-layout: post
-title: 오늘은 중요한 시험이 있는 날이다
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Prank
-tags: []
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '1156032956'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+published: true
+redirect_from:
+- /post/dreams-come-true
+status: publish
+tags: []
+title: 오늘은 중요한 시험이 있는 날이다
+type: post
 ---
 예전에 페이스북 타임라인에 올렸던 글이다.
 

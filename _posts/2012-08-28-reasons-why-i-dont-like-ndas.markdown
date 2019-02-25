@@ -1,26 +1,27 @@
 ---
-layout: post
-title: Reasons why I don't like NDAs
-post_id: '1559'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - 개똥 철학 (Rubbish Philosophy)
-tags:
-- iOS
-- NDA
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '822218861'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '1559'
+published: true
 redirect_from:
-  - /archives/1559/
+- /archives/1559/
+- /post/reasons-why-i-dont-like-ndas
+status: publish
+tags:
+- iOS
+- NDA
+title: Reasons why I don't like NDAs
+type: post
 ---
 I occasionally write iOS apps for myself and for work. I've been somewhat inactive in iOS app development business for the last several months, mostly because I was busy writing an Android app as a part of my graduate research assistant job. Most of time people contact me about their app business saying they have this *billion-dollor idea* that would change the world. Well, I generally don't believe in this *billion-dollor idea* bullshit. Frankly, I think ideas are almost useless unless someone actually brings that idea to the reality.
 

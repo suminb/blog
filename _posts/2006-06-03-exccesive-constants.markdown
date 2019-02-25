@@ -1,25 +1,26 @@
 ---
-layout: post
-title: Exccesive Constants
-post_id: '310'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Software Engineering
-tags:
-- Java
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '287065542'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '310'
+published: true
 redirect_from:
-  - /archives/310/
+- /archives/310/
+- /post/exccesive-constants
+status: publish
+tags:
+- Java
+title: Exccesive Constants
+type: post
 ---
 서론
 ----

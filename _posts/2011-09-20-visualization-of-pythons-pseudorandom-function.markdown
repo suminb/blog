@@ -1,28 +1,29 @@
 ---
-layout: post
-title: Visualization of Python's Pseudorandom Function
-post_id: '1524'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Geeky Stuff
+layout: post
+meta:
+  _edit_last: '1'
+  _thumbnail_id: '1529'
+  dsq_thread_id: '420841339'
+post_id: '1524'
+published: true
+redirect_from:
+- /archives/1524/
+- /post/visualization-of-pythons-pseudorandom-function
+status: publish
 tags:
 - NumPy
 - PIL
 - Python
-status: publish
+title: Visualization of Python's Pseudorandom Function
 type: post
-published: true
-meta:
-  _edit_last: '1'
-  dsq_thread_id: '420841339'
-  _thumbnail_id: '1529'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
-redirect_from:
-  - /archives/1524/
 ---
 <img src="http://blog.suminb.com/wp-content/uploads/2011/09/random.png" alt="" title="random" width="400" height="400" class="aligncenter size-full wp-image-1529" />
 

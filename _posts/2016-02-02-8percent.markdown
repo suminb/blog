@@ -1,16 +1,18 @@
 ---
-layout: post
-title: 8퍼센트 투자 후기
-categories:
-- Review
-- Finance
-tags:
-published: true
-meta:
 author:
   email: suminb@gmail.com
   first_name: Sumin
   last_name: Byeon
+categories:
+- Review
+- Finance
+layout: post
+meta: null
+published: true
+redirect_from:
+- /post/8percent
+tags: null
+title: 8퍼센트 투자 후기
 ---
 오랫동안 묵혀두었던 글을 이제서야 다시 꺼내서 쓴다. 글을 최초로 작성했던 시점과
 비교하여 [8퍼센트](http://8percent.kr)의 서비스가 달라진 부분이 많아서 꽤 많은

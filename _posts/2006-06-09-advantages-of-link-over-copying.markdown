@@ -1,24 +1,25 @@
 ---
-layout: post
-title: 펌질보다 링크가 좋은 이유
-post_id: '336'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - General
-tags: []
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '287065963'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '336'
+published: true
 redirect_from:
-  - /archives/336/
+- /archives/336/
+- /post/advantages-of-link-over-copying
+status: publish
+tags: []
+title: 펌질보다 링크가 좋은 이유
+type: post
 ---
 [이 글](http://www.hof.pe.kr/wp/archives/1880)을 읽고 생각나는게 있어서 포스트를 하나 써봤습니다.
 

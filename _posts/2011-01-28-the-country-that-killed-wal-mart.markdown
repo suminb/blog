@@ -1,9 +1,23 @@
 ---
-layout: post
-title: The Country that Killed Wal-Mart
-post_id: '1388'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - General
+layout: post
+meta:
+  _edit_last: '1'
+  _wp_old_slug: ''
+  dsq_thread_id: '287066632'
+post_id: '1388'
+published: true
+redirect_from:
+- /archives/1388/
+- /post/the-country-that-killed-wal-mart
+status: publish
 tags:
 - ActiveX
 - Hangul and Computers
@@ -14,21 +28,8 @@ tags:
 - SEED
 - Wal-Mart
 - Windows
-status: publish
+title: The Country that Killed Wal-Mart
 type: post
-published: true
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-  dsq_thread_id: '287066632'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
-redirect_from:
-  - /archives/1388/
 ---
 Note: This is a trackback post to <http://seoulspace.co.kr/2011/01/28/the-country-that-killed-wal-mart>
 

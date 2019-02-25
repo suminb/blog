@@ -1,23 +1,24 @@
 ---
-layout: post
-title: JSP 커스텀 태그 사용하기
-post_id: '71'
-categories:
-- Geeky Stuff
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  dsq_thread_id: '287066618'
 author:
-  login: admin
-  email: suminb@gmail.com
   display_name: Sumin
+  email: suminb@gmail.com
   first_name: Sumin
   last_name: Byeon
+  login: admin
+categories:
+- Geeky Stuff
+layout: post
+meta:
+  dsq_thread_id: '287066618'
+post_id: '71'
+published: true
 redirect_from:
-  - /archives/71/
+- /archives/71/
+- /post/jsp-custom-tag
+status: publish
+tags: []
+title: JSP 커스텀 태그 사용하기
+type: post
 ---
 ###### /WEB-INF/tlds/iterator.tld
 

@@ -1,24 +1,25 @@
 ---
-layout: post
-title: Packet Corruption
-post_id: '1883'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Troubleshooting
-tags: []
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '1627458270'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '1883'
+published: true
 redirect_from:
-  - /archives/1883/
+- /archives/1883/
+- /post/packet-corruption
+status: publish
+tags: []
+title: Packet Corruption
+type: post
 ---
 I encountered a very strange error message that I have never come across before. I was transferring a large file (a few gigabytes) from a computer to another using `rsync`.
 

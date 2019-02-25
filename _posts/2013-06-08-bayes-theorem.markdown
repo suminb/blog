@@ -1,25 +1,26 @@
 ---
-layout: post
-title: Bayes' Theorem
-post_id: '1861'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Mathematics
-tags:
-- machine learning
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '1380044454'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '1861'
+published: true
 redirect_from:
-  - /archives/1861/
+- /archives/1861/
+- /post/bayes-theorem
+status: publish
+tags:
+- machine learning
+title: Bayes' Theorem
+type: post
 ---
 In this article, I will explain Bayes' Theorem, which is the core of the Bayesian statistics, with a simple example.
 

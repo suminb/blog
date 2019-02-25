@@ -1,26 +1,27 @@
 ---
-layout: post
-title: 한글 음절(syllable) 다루기
-post_id: '375'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Software Engineering
-tags:
-- Java
-- 한글
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '287065203'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '375'
+published: true
 redirect_from:
-  - /archives/375/
+- /archives/375/
+- /post/hangul-syllable-manipulation
+status: publish
+tags:
+- Java
+- 한글
+title: 한글 음절(syllable) 다루기
+type: post
 ---
 # 서론
 

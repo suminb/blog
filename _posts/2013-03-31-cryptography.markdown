@@ -1,12 +1,25 @@
 ---
-layout: post
-title: 암호학(Cryptography) 이야기
-post_id: '1837'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Computer Science
 - Geeky Stuff
 - Information Security
 - Mathematics
+layout: post
+meta:
+  _edit_last: '1'
+  _thumbnail_id: '1838'
+  dsq_thread_id: '1176664352'
+post_id: '1837'
+published: true
+redirect_from:
+- /archives/1837/
+- /post/cryptography
 tags:
 - cryptography
 - DES
@@ -14,20 +27,8 @@ tags:
 - ROT-13
 - RSA
 - korean
+title: 암호학(Cryptography) 이야기
 type: post
-published: true
-meta:
-  _edit_last: '1'
-  _thumbnail_id: '1838'
-  dsq_thread_id: '1176664352'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
-redirect_from:
-  - /archives/1837/
 ---
 암호학(cryptography)은 나에게 있어 여러가지 면에서 중요한 의미를 지닌다. 암호학과 나의 인연의 시작은 아마 내가 고등학생때 봤던 [SEED][seed] 암호화 문서가 아닐까 한다. SEED는 1999년 한국인터넷진흥원과 국내 암호 전문가들이 개발한 128비트 블럭 암호화 알고리즘이다[^4]. 2009년에는 256비트 키를 지원하는 SEED 256도 개발 되었다.
 

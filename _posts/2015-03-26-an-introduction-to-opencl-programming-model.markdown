@@ -1,15 +1,17 @@
 ---
-layout: post
-title: Paper Review - An Introduction to OpenCL Programming Model
-categories:
-- Review
-tags: []
-published: true
-meta:
 author:
   email: suminb@gmail.com
   first_name: Sumin
   last_name: Byeon
+categories:
+- Review
+layout: post
+meta: null
+published: true
+redirect_from:
+- /post/an-introduction-to-opencl-programming-model
+tags: []
+title: Paper Review - An Introduction to OpenCL Programming Model
 ---
 
 This paper nicely outlines the basic concepts of general purpose GPU programming with OpenCL. This article will summarize some of the important concepts.

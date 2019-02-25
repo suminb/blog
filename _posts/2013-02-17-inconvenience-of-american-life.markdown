@@ -1,25 +1,26 @@
 ---
-layout: post
-title: 미국 생활의 불편함 1편
-post_id: '1627'
-categories:
-- 개똥 철학 (Rubbish Philosophy)
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '1'
-  dsq_thread_id: '1089870747'
-  _thumbnail_id: '1643'
 author:
-  login: admin
-  email: suminb@gmail.com
   display_name: Sumin
+  email: suminb@gmail.com
   first_name: Sumin
   last_name: Byeon
+  login: admin
+categories:
+- 개똥 철학 (Rubbish Philosophy)
+layout: post
+meta:
+  _edit_last: '1'
+  _thumbnail_id: '1643'
+  dsq_thread_id: '1089870747'
+post_id: '1627'
+published: true
 redirect_from:
-  - /archives/1627/
+- /archives/1627/
+- /post/inconvenience-of-american-life
+status: publish
+tags: []
+title: 미국 생활의 불편함 1편
+type: post
 ---
 내가 미국 생활을 시작한지도 어느덧 7년 이상이 지났다. 내가 보는 미국은 (적어도 아직까지는) 굉장히 매력적인 나라이다. 거대한 땅덩어리 만큼 다양한 기후와 자연 환경이 존재하고, 다양한 사람들이 모이는 곳인 만큼 다양한 음식과 문화, 언어를 쉽게 접할 수 있다. 한국과 다르게 삶의 기준이나 가치가 천편일률적으로 일렬화, 서열화 되어있지도 않다. 1등 하는 학생은 의대, 2등은 약대, 3등은 다른 과로 가는 시스템이 아니란 말이다. 그리고 내가 조금만 알아보고 노력한다면 얼마든지 기회가 있는 곳이 바로 이곳이다.
 

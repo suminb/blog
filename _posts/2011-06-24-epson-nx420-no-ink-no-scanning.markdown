@@ -1,24 +1,25 @@
 ---
-layout: post
-title: Epson NX420 - No Ink, No Scan?
-post_id: '1501'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - General
-tags: []
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '341414233'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '1501'
+published: true
 redirect_from:
-  - /archives/1501/
+- /archives/1501/
+- /post/epson-nx420-no-ink-no-scanning
+status: publish
+tags: []
+title: Epson NX420 - No Ink, No Scan?
+type: post
 ---
 I know I complain a lot for everything, but I really think this is worth complaining.
 

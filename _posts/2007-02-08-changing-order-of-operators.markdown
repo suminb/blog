@@ -1,24 +1,25 @@
 ---
-layout: post
-title: Binary Tree 탐색을 이용한 연산자 표기 순서 변경
-post_id: '552'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Computer Science
-tags: []
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '287065567'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '552'
+published: true
 redirect_from:
-  - /archives/552/
+- /archives/552/
+- /post/changing-order-of-operators
+status: publish
+tags: []
+title: Binary Tree 탐색을 이용한 연산자 표기 순서 변경
+type: post
 ---
 오랜만에 블로그 제목에 어울리는 포스트를 하나 올리겠다.
 

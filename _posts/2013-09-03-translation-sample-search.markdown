@@ -1,24 +1,25 @@
 ---
-layout: post
-title: Translation Sample Search
-post_id: '1889'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Computer Science
-tags: []
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '1699003503'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '1889'
+published: true
 redirect_from:
-  - /archives/1889/
+- /archives/1889/
+- /post/translation-sample-search
+status: publish
+tags: []
+title: Translation Sample Search
+type: post
 ---
 One of the goals of [Better Translator][better-translator] is to build a large database of natural language translation samples, which may ultimately lead us to develop our own translation engine rather than relying on Google Translate.
 

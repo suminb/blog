@@ -1,25 +1,26 @@
 ---
-layout: post
-title: 메모리 할당
-post_id: '57'
-categories:
-- Software Engineering
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  keywords: c,cpp,cpp,memory,메모리
-  dsq_thread_id: '287066009'
-  _edit_last: '1'
 author:
-  login: admin
-  email: suminb@gmail.com
   display_name: Sumin
+  email: suminb@gmail.com
   first_name: Sumin
   last_name: Byeon
+  login: admin
+categories:
+- Software Engineering
+layout: post
+meta:
+  _edit_last: '1'
+  dsq_thread_id: '287066009'
+  keywords: c,cpp,cpp,memory,메모리
+post_id: '57'
+published: true
 redirect_from:
-  - /archives/57/
+- /archives/57/
+- /post/memory-allocation
+status: publish
+tags: []
+title: 메모리 할당
+type: post
 ---
 응용프로그램이 사용하는 메모리 영역은 크게 스택(stack)과 힙(heap)으로 나눌 수 있다.
 

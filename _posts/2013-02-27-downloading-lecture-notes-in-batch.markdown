@@ -1,31 +1,32 @@
 ---
-layout: post
-title: Downloading Lecture Notes In Batch
-post_id: '1729'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Geeky Stuff
 - Tutorial
 - 생활 코딩 (Casual Coding)
+layout: post
+meta:
+  _edit_last: '1'
+  _thumbnail_id: '1730'
+  dsq_thread_id: '1107926741'
+post_id: '1729'
+published: true
+redirect_from:
+- /archives/1729/
+- /post/downloading-lecture-notes-in-batch
+status: publish
 tags:
 - curl
 - Python
 - urllib2
 - wget
-status: publish
+title: Downloading Lecture Notes In Batch
 type: post
-published: true
-meta:
-  _edit_last: '1'
-  dsq_thread_id: '1107926741'
-  _thumbnail_id: '1730'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
-redirect_from:
-  - /archives/1729/
 ---
 Imagine you have about 25 lecture notes to download. The files are in a PDF format and the links are available on your class web site. What would you do?
 

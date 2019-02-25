@@ -1,17 +1,19 @@
 ---
-layout: post
-title: 한국 인터넷 뱅킹의 고질적 문제점
-categories:
-- 개똥 철학 (Rubbish Philosophy)
-tags: []
-status: publish
-type: post
-published: true
-meta:
 author:
   email: suminb@gmail.com
   first_name: Sumin
   last_name: Byeon
+categories:
+- 개똥 철학 (Rubbish Philosophy)
+layout: post
+meta: null
+published: true
+redirect_from:
+- /post/problems-with-korean-online-banking
+status: publish
+tags: []
+title: 한국 인터넷 뱅킹의 고질적 문제점
+type: post
 ---
 
 그것은 바로 폼에 무언가 조건에 맞지 않는 것을 입력 했을 때 한참 후에나 알려준다는 것이다. 예를 들면, 계좌번호를 입력할 때 하이픈 없이 숫자만 입력을 해야 한다거나, 통장 잔고가 부족하다거나 하는 등 사전에 발견할 수 있는 문제점들을 얘기해주지 않고 있다가 계좌 이체 절차의 마지막 단계에서 문제점을 알려주는 식이다.

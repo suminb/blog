@@ -1,27 +1,28 @@
 ---
-layout: post
-title: 컴퓨터 과학(Computer Science)에 대한 고찰
-post_id: '1600'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Computer Science
 - 개똥 철학 (Rubbish Philosophy)
-tags:
-- Computer Science
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   _thumbnail_id: '1601'
   dsq_thread_id: '1067420036'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '1600'
+published: true
 redirect_from:
-  - /archives/1600/
+- /archives/1600/
+- /post/thoughts-about-computer-science
+status: publish
+tags:
+- Computer Science
+title: 컴퓨터 과학(Computer Science)에 대한 고찰
+type: post
 ---
 아무리 생각해봐도 컴퓨터 과학(computer science)은 전공 이름을 잘못 지은것 같다. 천문학과 학생이라고 해서 천체 망원경을 고칠 수 있을거라고는 아무도 기대하지 않지만, 사람들은 컴퓨터 과학과 학생들한테는 본업에서 벗어난 아주 많은것들을 기대한다. 굳이 억지스러운 비유를 하자면 수학과 학생들이 [TI-89 계산기](http://en.wikipedia.org/wiki/TI-89_series)에 [데비안 리눅스](http://www.debian.org/)를 설치하는게 가능하다고 생각하거나, 화학과 학생들이 집에서 바퀴벌레를 잡을 수 있는 약을 제조할 수 있다고 믿는 식이다.
 

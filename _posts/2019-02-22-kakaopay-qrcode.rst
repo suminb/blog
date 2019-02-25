@@ -1,20 +1,22 @@
 ---
-layout: post
-title: 카카오페이 QR 코드 리버스 엔지니어링
+author:
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
 categories:
 - Geeky Stuff
+draft: false
+layout: post
+meta: null
+published: true
+redirect_from:
+- /post/kakaopay-qrcode
 tags:
 - kakao
 - kakaopay
 - python
 - reverse-engineering
-published: true
-draft: false
-meta:
-author:
-  email: suminb@gmail.com
-  first_name: Sumin
-  last_name: Byeon
+title: 카카오페이 QR 코드 리버스 엔지니어링
 ---
 
 소프트웨어 엔지니어라는 직업이 매력적인 이유는 엄청나게 많지만, 오늘은 그

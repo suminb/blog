@@ -1,25 +1,26 @@
 ---
-layout: post
-title: Object Serialization
-post_id: '136'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Geeky Stuff
-tags:
-- Java
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '287065984'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '136'
+published: true
 redirect_from:
-  - /archives/136/
+- /archives/136/
+- /post/object-serialization
+status: publish
+tags:
+- Java
+title: Object Serialization
+type: post
 ---
 Source Code
 -----------

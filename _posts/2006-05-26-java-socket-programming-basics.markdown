@@ -1,27 +1,28 @@
 ---
-layout: post
-title: 간단한 자바 소켓 프로그래밍
-post_id: '303'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Software Engineering
+layout: post
+meta:
+  _edit_last: '1'
+  dsq_thread_id: '287065715'
+post_id: '303'
+published: true
+redirect_from:
+- /archives/303/
+- /post/java-socket-programming-basics
+status: publish
 tags:
 - Java
 - socket
 - stream
-status: publish
+title: 간단한 자바 소켓 프로그래밍
 type: post
-published: true
-meta:
-  _edit_last: '1'
-  dsq_thread_id: '287065715'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
-redirect_from:
-  - /archives/303/
 ---
 # 서론
 

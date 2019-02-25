@@ -1,24 +1,25 @@
 ---
-layout: post
-title: What you eat is what you are
-post_id: '1770'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - 개똥 철학 (Rubbish Philosophy)
-tags: []
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '1127516355'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '1770'
+published: true
 redirect_from:
-  - /archives/1770/
+- /archives/1770/
+- /post/what-you-eat-is-what-you-are
+status: publish
+tags: []
+title: What you eat is what you are
+type: post
 ---
 미국은 굉장히 가정적인 문화를 가진 나라이다. 크리스마스나 추수감사절 연휴에는 가족들끼리 모여 같이 저녁 식사를 하고 시간을 보내는게 일반적이다. 나는 미국에 가족이 없어서 항상 현지인 친구 가족들이 모이는 자리에 끼어서 같이 연휴를 보내곤 했는데, 2010년 크리스마스에 처음으로 일탈(?)을 하게 됐다. 처음으로 현지인 친구들이 아닌 다른 친구와 같이 크리스마스를 보내게 됐었는데, 난 그때까지만 해도 크리스마스가 가족이 없는 사람들에게 그렇게까지 잔인한 날이 될 수 있을 것이라고는 상상도 못했었다. 크리스마스 당일 아예 문을 열지 않는 식당이 대부분이고, 식료품점까지도 오후 세시에 모두 문을 닫아서 [IHOP](http://ko.wikipedia.org/wiki/%EC%95%84%EC%9D%B4%ED%99%89)에 가서 저녁 식사를 했던 기억이 있다.
 

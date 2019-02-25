@@ -1,9 +1,22 @@
 ---
-layout: post
-title: Languages of the Year 2009
-post_id: '1200'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Geeky Stuff
+layout: post
+meta:
+  _edit_last: '1'
+  dsq_thread_id: '287064940'
+post_id: '1200'
+published: true
+redirect_from:
+- /archives/1200/
+- /post/languages-of-the-year-2009
+status: publish
 tags:
 - C
 - haskell
@@ -14,20 +27,8 @@ tags:
 - prolog
 - Python
 - ruby
-status: publish
+title: Languages of the Year 2009
 type: post
-published: true
-meta:
-  _edit_last: '1'
-  dsq_thread_id: '287064940'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
-redirect_from:
-  - /archives/1200/
 ---
 It's almost the end of the year 2009. This year is special because I've never dealt with so many languages in a year. Objective C, Python, Java, C++, PHP, JavaScript, Haskell, Prolog, Ruby, C#, and probably more. Some of them were for work, some for school, and others were for my personal projects. I have plenty of stories for each language, but I'll try to keep them brief.
 

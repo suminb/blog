@@ -1,24 +1,25 @@
 ---
-layout: post
-title: LCS(Longest Common Subsequence) 찾기
-post_id: '614'
+author:
+  display_name: Sumin
+  email: suminb@gmail.com
+  first_name: Sumin
+  last_name: Byeon
+  login: admin
 categories:
 - Computer Science
-tags: []
-status: publish
-type: post
-published: true
+layout: post
 meta:
   _edit_last: '1'
   dsq_thread_id: '287066168'
-author:
-  login: admin
-  email: suminb@gmail.com
-  display_name: Sumin
-  first_name: Sumin
-  last_name: Byeon
+post_id: '614'
+published: true
 redirect_from:
-  - /archives/614/
+- /archives/614/
+- /post/longest-common-subsequence
+status: publish
+tags: []
+title: LCS(Longest Common Subsequence) 찾기
+type: post
 ---
 오... 완전 신기>_ <
 

@@ -1,15 +1,17 @@
 ---
-layout: post
-title: 최고의 복지
-categories:
-- 개똥 철학 (Rubbish Philosophy)
-tags:
-published: true
-meta:
 author:
   email: suminb@gmail.com
   first_name: Sumin
   last_name: Byeon
+categories:
+- 개똥 철학 (Rubbish Philosophy)
+layout: post
+meta: null
+published: true
+redirect_from:
+- /post/the-best-employee-benefits
+tags: null
+title: 최고의 복지
 ---
 회사가 직원에게 해줄 수 있는 최고의 복지는 시간을 아껴주는 것, 그리고 직원이 회사 일 이외의 일을 가지고 걱정을 하지 않도록 도와주는 것이 아닐까 한다. 회사에 수영장이 있네, 해외로 워크샵을 가네 하는 것이 중요한게 아니라, 당장 먹고 살 걱정에 오늘만 보면서 사는 직원이 아닌, 미래에 대한 그림을 그려볼 수 있는 여유를 가진 직원을 만드는 것, 그리고 궁극적으로는 직원이 성장할 수 있는 발판을 마련해 주는 것. 그런 것이 회사가 직원에게 해줄 수 있는 최고의 복지라고 생각한다.
 
