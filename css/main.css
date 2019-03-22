@@ -284,18 +284,17 @@ a.citation-reference, a.footnote-reference {
   margin: 0;
 }
 
-.post pre,
+.post pre.code,
 .post code {
   border: 1px solid #d5d5e9;
-  background-color: #eef;
+  background-color: #f6f8fa;
   padding: 8px 12px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  font-size: 0.95em;
+  font-size: 0.92em;
   white-space: pre-wrap;
 }
-
 .post code { padding: 1px 5px; }
 
 .post ul,
