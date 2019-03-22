@@ -15,11 +15,11 @@ title: Tail Recursion in Python
 ---
 
 요즘 `LeetCode <https://leetcode.com/>`_ 에서 하루에 하나씩 알고리즘 문제를
-풀고 있는데,\ [#leet]_ 재귀 호출을 이용할 때가 많다. 특히 트리나 그래프를 깊이
-우선 탐색(BFS)할 때 직접 `스택
-<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>`_\ 에 값을 넣고 빼지
-않아도 되기 때문에 편리하게 구현할 수 있다. 당연한 이야기겠지만, 내 코드에서
-관리되는 스택이 아니라 시스템 스택을 사용하기 때문에 가능한 것이다.
+풀고 있는데,\ [#leet]_ 재귀 호출을 이용할 때가 많다. 특히 트리나 그래프를 `깊이
+우선 탐색(DFS) <https://en.wikipedia.org/wiki/Depth-first_search>`_\ 할 때 직접
+`스택 <https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>`_\ 에 값을
+넣고 빼지 않아도 되기 때문에 편리하게 구현할 수 있다. 당연한 이야기겠지만, 내
+코드에서 관리되는 스택이 아니라 시스템 스택을 사용하기 때문에 가능한 것이다.
 
 재귀 호출은 구현이 편리하긴 하지만 나름의 문제를 가지고 있다. 재귀 호출 스택의
 깊이가 얕은 경우에는 어떻게 구현하든 별로 상관이 없는데, 깊이가 깊어지면 문제가
@@ -106,6 +106,27 @@ Tail Recursion
 말해서, ``factorial(n)``\ 의 실행이 완료 되지 않은 상태에서 ``factorial(n -
 1)``\ 를 호출하기 때문에 리턴 주소를 저장하기 위해서 시스템 콜 스택을 사용할 수
 밖에 없다.
+
+.. code::
+
+    2           0 LOAD_FAST                0 (n)
+                2 LOAD_CONST               1 (0)
+                4 COMPARE_OP               2 (==)
+                6 POP_JUMP_IF_FALSE       12
+
+    3           8 LOAD_CONST               2 (1)
+                10 RETURN_VALUE
+
+    5     >>   12 LOAD_FAST                0 (n)
+                14 LOAD_GLOBAL              0 (factorial)
+                16 LOAD_FAST                0 (n)
+                18 LOAD_CONST               2 (1)
+                20 BINARY_SUBTRACT
+                22 CALL_FUNCTION            1
+                24 BINARY_MULTIPLY
+                26 RETURN_VALUE
+                28 LOAD_CONST               0 (None)
+                30 RETURN_VALUE
 
 Tail Recursion Elimination (TRE)
 --------------------------------
@@ -241,28 +262,153 @@ Dive Deep
     A try/except block is extremely efficient if no exceptions are raised.
     Actually catching an exception is expensive.
 
-하지만 우리는 재귀 함수의 종료 조건이 만족되지 않는 이상 실제로 예외를 캐치하고
-있기 때문에 성능상 비싼 값을 치르고 있을 수도 있다. 그래서 얼마나 느린지 직접
-테스트를 해보기로 했다. 테스트 코드는 `Gist
+하지만 우리는 재귀 함수의 종료 조건이 만족될 때를 제외하고는 실제로 예외를
+캐치하고 있기 때문에 성능상 비싼 값을 치르고 있을 수도 있다. 그래서 얼마나
+느린지 직접 테스트를 해보기로 했다. 테스트 코드는 `Gist
 <https://gist.github.com/suminb/7118ffb2251b07701b4f8bb9dbd7f899>`_\ 에
 올려두었다.
 
 .. code::
 
     recursive_code
-    3.60 usec/pass
+    0.305 ms/pass
 
     tail_recursive_code
-    3.90 usec/pass
+    0.416 ms/pass
 
     tail_recursion_eliminated_code
-    28.68 usec/pass
+    1.916 ms/pass
 
 일반적인 재귀 호출 코드와 꼬리 재귀(tail recursion) 호출 코드는 대동소이한
-반면, TRE 코드는 일곱 배 이상 느린 것으로 나타났다(!) 성능을 개선하려면
+반면, TRE 코드는 여섯 배 가량 느린 것으로 나타났다(!) 성능을 개선하려면
 ``try``/``except`` 구문을 사용하지 않고 다른 방법으로 구현해야 할 것 같다.
 
-(TODO: 다른 방법으로 구현해보기)
+우리가 ``try``/``except`` 구문을 사용하는 이유는 신호를 전달하기 위함이다.
+이번에 재귀 호출을 해야 하는지, 아니면 종료 조건이 만족되어 그냥 결과값을
+반환하면 되는지 판단하고, 그 결과를 ``tail_recursion()`` 안쪽의 ``wrapper()``
+함수로 전달할 수 있으면 된다. 그래서 다음의 두 가지 방법을 시도해봤다.
+
+Take One: Globals
+~~~~~~~~~~~~~~~~~
+
+먼저, 전역 변수를 이용해서 신호를 전달하는 방식으로 코드를 조금 수정해보았다.
+
+.. code:: python
+
+    g = globals()
+
+
+    def recurse(*args, **kwargs):
+        g['@caller_id'] = (True, args, kwargs)
+
+
+    def tail_recursion(f):
+        def wrapper(*args, **kwargs):
+            caller_id = f.__name__
+            while True:
+                g[caller_id] = (False, args, kwargs)
+                result = f(*args, **kwargs)
+                recursion, args, kwargs = g[caller_id]
+                if not recursion:
+                    return result
+        return wrapper
+
+여기서 ``@caller_id``\ 로 표시된 부분은 ``recurse()`` 함수를 호출하는
+호출자(caller) 함수의 이름이 들어갈 자리이다. ``inspect`` 패키지를 이용하여
+호출자 이름을 받아오는 방법이 있긴 하지만,\ [#caller-name]_ 사용할 수 없을
+정도로 느리다. 시간을 재다가 너무 오래 걸려서 그냥 포기했다. 만약
+``recurse()``\ 에서 호출자 이름을 빠르게 알아낼 수 있는 방법이 없다면 이 방법은
+범용적으로 사용하기는 어려울 것 같다. LeetCode 문제 풀어서 제출하는 정도의
+용도로는 별 지장이 없겠지만.
+
+.. code::
+
+    recursive_code
+    0.302 ms/pass
+
+    tail_recursive_code
+    0.413 ms/pass
+
+    tail_recursion_eliminated_code
+    1.441 ms/pass
+
+다만, ``try``/``except`` 구문을 제거함으로써 25% 정도의 성능 향상을 도모할 수
+있었다.
+
+Take Two: Coroutines
+~~~~~~~~~~~~~~~~~~~~
+
+전역 변수를 사용하는 대신 `코루틴
+<https://docs.python.org/3/library/asyncio-task.html>`_\ 을 이용하는 방법도
+생각해보았다.
+
+StackOverflow의 어떤 답변은 코루틴을 다음과 같이 정의하고 있다.\ [#coroutine]_
+
+    Coroutines are a general control structure whereby flow control is
+    cooperatively passed between two different routines without returning.
+
+코루틴에 대한 학술적 정의와는 완벽하게 들어맞지 않을 수도 있지만, 지금 우리가
+하고자 하는 맥락에서 가장 이해하기 쉬운 설명이라는 생각이 들었다. 우리가 필요한
+부분은 두 함수가 신호를 주고 받는 장치이고, 코루틴이 그 부분을 해결해줄 수 있을
+것 같아서 코루틴을 이용하여 TRE 코드를 작성해보기로 하였다.
+
+.. code:: python
+
+    import asyncio
+
+
+    async def done(result):
+        return False, result, {}
+
+
+    async def recurse(*args, **kwargs):
+        return True, args, kwargs
+
+
+    async def handler(f, *args, **kwargs):
+        while True:
+            task = asyncio.ensure_future(f(*args, **kwargs))
+            recursion, args, kwargs = await task
+
+            if not recursion:
+                return args
+
+
+    def tail_recursion(f):
+        def wrapper(*args, **kwargs):
+            loop = asyncio.get_event_loop()
+            return loop.run_until_complete(handler(f, *args, **kwargs))
+        return wrapper
+
+코루틴을 이용할 경우 원본 코드를 약간 수정해야 한다. 
+
+.. code:: python
+
+    @tail_recursion
+    def factorial(n, result=1):
+        from trlib import done, recurse as factorial
+        if n == 0:
+            return done(result)
+        else:
+            return factorial(n - 1, result * n)
+
+재귀 종료 조건을 만족했을 때 위와 같이 ``done()`` 함수를 이용해서 결과값을
+전달해야 한다. ``done()`` 함수를 거치지 않고 결과값을 전달하는 방법을 찾지
+못했기 때문이다.
+
+.. code::
+
+    recursive_code
+    0.303 ms/pass
+
+    tail_recursive_code
+    0.418 ms/pass
+
+    tail_recursion_eliminated_code
+    19.460 ms/pass
+
+전역변수를 사용하는 코드에 비해서 13배 이상 느리기 때문에 사용하지 않는 것이 좋겠다.
+
 
 Conclusion
 ----------
@@ -287,3 +433,5 @@ Footnotes
 .. [#python-exception-cost] https://docs.python.org/3.7/faq/design.html#how-fast-are-exceptions
 .. [#yak-shaving] https://www.lesstif.com/pages/viewpage.action?pageId=29590364
 .. [#critiques-on-tre] https://neopythonic.blogspot.com/2009/04/tail-recursion-elimination.html
+.. [#caller-name] https://stackoverflow.com/a/2654130
+.. [#coroutine] https://stackoverflow.com/a/553745/1913623
