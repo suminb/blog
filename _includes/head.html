@@ -4,7 +4,13 @@
     <title>{{ page.title | site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="description" content="{{ page.summary | page.title | site.description }}"/>
+
+    <meta property="og:type" content="{% if page.title %}artitle{% endif %}"/>
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
+    <meta property="og:title" content="{{ page.title }}"/>
+    <meta property="og:description" content="{{ page.summary }}"/>
     <meta property="og:image" content="{{ page.og_image | prepend: site.baseurl | prepend: site.url }}" />
+
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
 
     <!-- Custom CSS -->
