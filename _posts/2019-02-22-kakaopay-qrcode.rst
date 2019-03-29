@@ -17,6 +17,8 @@ tags:
 - python
 - reverse-engineering
 title: 카카오페이 QR 코드 리버스 엔지니어링
+summary: 카카오페이 QR 코드를 리버스 엔지니어링 해서 원하는 송금 코드를 만들어냈던 이야기
+og_image: /attachments/2019/kakaopay-qrcode/kakaopay.png
 ---
 
 소프트웨어 엔지니어라는 직업이 매력적인 이유는 엄청나게 많지만, 오늘은 그
