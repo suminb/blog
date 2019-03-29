@@ -12,6 +12,7 @@ published: true
 tags:
 - python
 title: Tail Recursion in Python
+summary: 파이썬에서 꼬리 재귀 제거(tail recursion elimination)를 구현한 이야기
 ---
 
 요즘 `LeetCode <https://leetcode.com/>`_ 에서 하루에 하나씩 알고리즘 문제를
@@ -342,8 +343,8 @@ Home-Brewing TRE
 1. 파이썬 인터프리터를 수정하기\ [#python-switch-statement]_
 2. 재귀 호출할 때 함수를 다른걸로 바꿔치기
 
-1번이 더 멋진 일이지만, 작업 분량과 난이도를 생각했을 때 2번이 조금 더 현실적인
-대안이라고 생각했다.
+내 관점에서는 1번이 더 멋진 일이지만, 작업 분량과 난이도를 생각했을 때 2번이
+조금 더 현실적인 대안이라고 생각했다.
 
 .. code:: python
 
@@ -608,7 +609,7 @@ TRE 코드를 통해 사실상 무제한으로 재귀호출을 할 수 있게 �
 모든 문제를 해결하려는 태도를 지양하는 편이기 때문에 이런 시각에 대체적으로
 동의한다.
 
-모든 문제를 재귀 호출로 해결할 필요는 없다. 다만, `동적 프로그래밍(dynamic
+모든 문제를 재귀적으로 해결할 필요는 없다. 다만, `동적 프로그래밍(dynamic
 programming) <https://en.wikipedia.org/wiki/Dynamic_programming>`_\ 과 같은
 방법으로 해결한 문제는 `점화식(recurrence relations)
 <https://en.wikipedia.org/wiki/Recurrence_relation>`_\ 으로 표현되기 마련이다.
