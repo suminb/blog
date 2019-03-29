@@ -66,18 +66,19 @@ title: Tail Recursion in Python
 뜻이다. 해결책은 크게 두 가지다.
 
 1. Iterative solution
-2. Tail recursion
+2. Tail recursion elimination
 
 오늘은 두 번째 해결책에 대한 이야기를 해보고자 한다.
 
 
 Tail Recursion
 --------------
-한국어로는 '꼬리 재귀'라고 표현하기도 하는데,\ [#tail-recursion-ko]_ 널리
-쓰이는 용어인지는 잘 모르겠다. 이 글에서는 그냥 원래 용어 그대로 tail recursion
-이라고 표기하도록 하겠다.
+검색을 해보니 한국어로는 '꼬리 재귀'라고 표현하는 것으로 보인다.\
+[#tail-recursion-ko]_ 개인적으로는 tail recursion이 더 익숙한 용어이긴 하지만,
+글을 쓸 때 한/영 전환을 하는 것은 번거로운 일이기 때문에(?) 이 글에서는 꼬리
+재귀로 표기하도록 하겠다.
 
-위키피디아는 tail recursion을 다음과 같이 정의하고 있다.\ [#tail-recursion]_
+위키피디아는 꼬리 재귀를 다음과 같이 정의하고 있다.\ [#tail-recursion]_
 
     In computer science, a tail call is a subroutine call performed as the
     final action of a procedure. If a tail call might lead to the same
@@ -87,10 +88,9 @@ Tail Recursion
     handle in implementations.
 
 조금 더 간단히 이야기 하자면, 함수에서 마지막으로 호출하는 함수가 자기
-자신이고, 재귀 호출이 끝난 뒤 추가적인 연산이 필요하지 않다면 tail recursion
-이라고 볼 수 있다. 재귀 호출 후 추가적인 연산이 필요하지 않다면 진짜로 함수를
-호출하는 것 처럼 시스템 콜 스택에 이것저것 저장하지 않고 선형적으로 구현할 수
-있다.
+자신이고, 재귀 호출이 끝난 뒤 추가적인 연산이 필요하지 않다면 꼬리 재귀라고 볼
+수 있다. 재귀 호출 후 추가적인 연산이 필요하지 않다면 진짜로 함수를 호출하는 것
+처럼 시스템 콜 스택에 이것저것 저장하지 않고 선형적으로 구현할 수 있다.
 
 팩토리얼을 연산하는 파이썬 코드를 예제로 사용해보자.
 
@@ -107,8 +107,16 @@ Tail Recursion
 1)``\ 를 호출하기 때문에 리턴 주소를 저장하기 위해서 시스템 콜 스택을 사용할 수
 밖에 없다.
 
+조금 더 깊숙히 들여다보기 위해 `파이썬 바이트 코드
+<https://opensource.com/article/18/4/introduction-python-bytecode>`_\ 를
+해부해보도록 하자. |dis-package|_\ 를 이용하면 손쉽게 바이트 코드를 볼 수 있다.
+
+.. |dis-package| replace:: ``dis`` 패키지
+.. _dis-package: https://docs.python.org/3/library/dis.html
+
 .. code::
 
+    >>> dis.dis(factorial)
     2           0 LOAD_FAST                0 (n)
                 2 LOAD_CONST               1 (0)
                 4 COMPARE_OP               2 (==)
@@ -128,14 +136,123 @@ Tail Recursion
                 28 LOAD_CONST               0 (None)
                 30 RETURN_VALUE
 
-Tail Recursion Elimination (TRE)
---------------------------------
+여기서 주의 깊게 봐야 할 부분은 ``factorial()`` 함수를 호출하는 부분이다.
 
-위와 같이 tail recursion 조건을 만족한다면 실제로 함수를 호출하지 않는
-반복해(iterative solution) 코드로 변경할 수 있다. 이러한 과정을 tail recursion
-elimination (TRE) 이라고 한다. 그렇게 하기 위해서는 ``factorial(n - 1)``\ 의
-연산이 끝난 후 추가적인 연산이 필요 없도록 만들어야 한다. 위의 코드를 조금
-바꾸어 다음과 같이 작성할 수 있다.
+.. code::
+
+                14 LOAD_GLOBAL              0 (factorial)
+                16 LOAD_FAST                0 (n)
+                18 LOAD_CONST               2 (1)
+                20 BINARY_SUBTRACT
+                22 CALL_FUNCTION            1
+
+평가 스택(evaluation stack)에 ``n``\ 과 ``1``\ 을 넣은 후 ``BINARY_SUBTRACT``
+명령어를 수행하면 평가 스택에서 값 두 개를 꺼내서 빼기 연산을 수행하고, 그
+결과를 다시 평가 스택에 넣는다. 그런 다음 ``CALL_FUNCTION`` 명령어의
+인자(``1``) 만큼 평가 스택에서 값을 꺼내고, 그 전에 넣어 놓았던 함수
+이름(``factorial``)을 꺼내서 함수를 호출한다.
+
+.. code::
+
+                24 BINARY_MULTIPLY
+                26 RETURN_VALUE
+
+바이트 코드를 계속 이어서 보자면, ``factorial()`` 함수 호출이 끝나면 함수 실행
+결과 값이 평가 스택에 저장되고, 곧이어 ``BINARY_MULTIPLY`` 명령어를 호출한다.
+함수 호출 결과값과 ``LOAD_GLOBAL (factorial)`` 명령어 이전에 평가 스택에
+넣어놨던 ``n``\ 을 꺼내서 곱한 후 그 결과를 다시 평가 스택에 넣는다.
+``RETURN_VALUE`` 명령어는 평가 스택에서 값을 하나 꺼내 현재 함수의
+호출자(caller)에게 돌려준다.
+
+.. code::
+
+    return n * factorial(n - 1)
+
+이로써 위와 같은 파이썬 코드가 수행되는 과정을 간략하게 살펴보았는데, 핵심은
+현재 함수(``factorial(n)``)에서 결과값을 반환하기 위해서는 현재 함수의 인자
+값(``n``)을 평가 스택에 가지고 있다가 그 다음 호출 될 함수(``factorial(n -
+1)``)의 결과 값과 함께 연산을 해야 하기 때문에 재귀 호출이 불가피하다는 점이다.
+
+.. raw:: html
+
+    <!-- TODO: Define a set of styles for this -->
+    <div style="margin: 1em 0 1.5em 0; padding: 1em; background: #f8ffff; color: rgba(0,0,0,.87); box-shadow: 0 0 0 1px #a9d5de inset,0 0 0 0 transparent; border-radius: 4px; font-size: 0.9em;">
+        <h4 style="margin: 0.5em 0;">토막 상식</h4>
+        <div>
+
+함수의 최상위 블럭에 ``return`` 구문이 없을 경우 함수의 바이트 코드 맨 뒤쪽에는
+항상 ``None``\ 을 반환하는 코드가 붙는다. 예를 들어서, 다음과 같은 코드의 경우
+``return`` 구문이 실행되지 않는 경우는 없겠지만, ``return`` 구문이 모두
+``if``/``else`` 조건문 안쪽에 있고, 최상위 블럭에는 ``return`` 구문이 존재하지
+않는다.
+
+.. code:: python
+
+    def f(x):
+        if x == 0:
+            return x
+        else:
+            return x + 1
+
+바이트 코드의 끝 부분을 보면 다음과 같이 ``None``\ 을 반환하는 코드가 붙는다.
+
+.. code::
+
+    >>> dis.dis(f)
+    ..(중략)..
+             18 RETURN_VALUE
+             20 LOAD_CONST               0 (None)
+             22 RETURN_VALUE
+
+반면, 다음과 같은 코드는 위 코드와 논리적으로 아무런 차이가 없지만, ``return``
+구문이 함수의 최상위 블럭에 존재하기 때문에 ``None``\ 을 반환하는 코드가
+추가되지 않는다.
+
+.. code:: python
+
+    def g(x):
+        if x == 0:
+            return x
+        return x + 1
+
+따라서 다음과 같이 ``return x + 1`` 구문을 마지막으로 따로 추가되는 명령어는
+없다.
+
+.. code::
+
+    >>> dis.dis(g)
+    ..(중략)..
+    4     >>   12 LOAD_FAST                0 (x)
+                14 LOAD_CONST               2 (1)
+                16 BINARY_ADD
+                18 RETURN_VALUE
+
+다음과 같이 아무것도 하지 않는 함수라고 하더라도 ``None``\ 을 반환하도록
+되어있다.
+
+.. code:: python
+
+    def h(x):
+        pass
+
+바이트 코드는 다음과 같다.
+
+.. code::
+
+    >>> dis.dis(h)
+    1           0 LOAD_CONST               0 (None)
+                2 RETURN_VALUE
+
+참고: CPython 이외의 인터프리터에서는 테스트해보지 않았다.
+
+.. raw:: html
+
+        </div>
+    </div>
+
+그럼 이 함수를 꼬리 재귀로 바꾸려면 어떻게 해야 할까. 재귀 호출을 하는 부분에서
+추가적인 연산이 필요 없도록 만들면 된다. 코드를 살짝 수정하여 아래와 같이
+바꾸어 볼 수 있을 것이다.
 
 .. code:: python
 
@@ -145,8 +262,62 @@ elimination (TRE) 이라고 한다. 그렇게 하기 위해서는 ``factorial(n 
       else:
           return factorial(n - 1, n * result)
 
-만약, 파이썬 인터프리터가 TRE를 할 수 있다면 위의 코드는 다음과 같이 변환될
-것이다.
+바이트 코드도 살펴보도록 하자.
+
+.. code::
+
+    >>> dis.dis(factorial)
+    2           0 LOAD_FAST                0 (n)
+                2 LOAD_CONST               1 (0)
+                4 COMPARE_OP               2 (==)
+                6 POP_JUMP_IF_FALSE       12
+
+    3           8 LOAD_FAST                1 (result)
+                10 RETURN_VALUE
+
+    5     >>   12 LOAD_GLOBAL              0 (factorial)
+                14 LOAD_FAST                0 (n)
+                16 LOAD_CONST               2 (1)
+                18 BINARY_SUBTRACT
+                20 LOAD_FAST                0 (n)
+                22 LOAD_FAST                1 (result)
+                24 BINARY_MULTIPLY
+                26 CALL_FUNCTION            2
+                28 RETURN_VALUE
+                30 LOAD_CONST               0 (None)
+                32 RETURN_VALUE
+
+가장 핵심적인 차이점은 이것이다.
+
+.. code::
+
+            26 CALL_FUNCTION            2
+            28 RETURN_VALUE
+
+``factorial()`` 함수를 재귀적으로 호출하긴 하지만, 결과값을 받아서 추가적인
+연산을 하지 않고 바로 반환하도록 되어있다. 이로써 꼬리 재귀의 조건을 충족시킬
+수 있게 되었다.
+
+
+Tail Recursion Elimination (TRE)
+--------------------------------
+
+위와 같이 꼬리 재귀 조건을 만족한다면 실제로 함수를 호출하지 않는
+반복해(iterative solution) 코드로 변경할 수 있다. 이러한 과정을 tail recursion
+elimination (TRE) 이라고 한다. 만약, 파이썬 바이트 코드 컴파일러가 TRE를 할 수
+있다면 앞서 소개했던 꼬리 재귀 코드는 다음과 같이 변환될 것이다.
+
+.. code:: python
+
+    def factorial(n, result=1):
+        while True:
+            if n == 0:
+                return result
+            else:
+                result = n * result
+                n = n - 1
+
+컴파일러가 충분히 똑똑하다면 조금 더 괜찮은 코드를 작성할 수 있을지도 모른다.
 
 .. code:: python
 
@@ -156,17 +327,17 @@ elimination (TRE) 이라고 한다. 그렇게 하기 위해서는 ``factorial(n 
             n = n - 1
         return result
 
-Scala와 같은 언어에서는 tail recursion optimization을 기본으로 제공하기도
-하고,\ [#tail-recursion-in-scala]_ Haskell과 같은 언어에서는 함수 호출이 항상
-새로운 스택 프레임을 사용하지 않을 수도 있기 때문에\
-[#tail-recursion-in-haskell]_ 마음놓고 재귀 호출을 사용할 수 있지만, 파이썬의
-경우 아쉽게도 그런 호사는 누릴 수 없다.
+Scala와 같은 언어에서는 꼬리 재귀 최적화(tail recursion optimization)를
+기본으로 제공하기도 하고,\ [#tail-recursion-in-scala]_ Haskell과 같은
+언어에서는 함수 호출이 항상 새로운 콜 스택 프레임을 사용하지 않을 수도 있기
+때문에\ [#tail-recursion-in-haskell]_ 마음놓고 재귀 호출을 사용할 수 있지만,
+파이썬의 경우 아쉽게도 그런 호사는 누릴 수 없다.
 
 
 Home-Brewing TRE
 ----------------
 
-없으면 만들어야지. 이것도 크게 두 가지 방법이 있을 것 같다.
+없으면 만들어야지. 이것도 크게 두 가지 해결책이 있을 것 같다.
 
 1. 파이썬 인터프리터를 수정하기\ [#python-switch-statement]_
 2. 재귀 호출할 때 함수를 다른걸로 바꿔치기
@@ -225,7 +396,7 @@ Home-Brewing TRE
 기본적인 아이디어는 ``factorial()`` 함수를 실제로 재귀적으로 호출하는 대신,
 내부적으로 다른 일이 일어나도록 만드는 것이다.
 
-재귀 호출이었다면 다음과 같이 ``factorial()`` 함수 호출의 흔적이 시스템 스택에
+재귀 호출이었다면 다음과 같이 ``factorial()`` 함수 호출의 흔적이 콜 스택에
 차곡차곡 쌓였을텐데,
 
 .. code::
@@ -281,7 +452,8 @@ Dive Deep
 
 일반적인 재귀 호출 코드와 꼬리 재귀(tail recursion) 호출 코드는 대동소이한
 반면, TRE 코드는 여섯 배 가량 느린 것으로 나타났다(!) 성능을 개선하려면
-``try``/``except`` 구문을 사용하지 않고 다른 방법으로 구현해야 할 것 같다.
+아무래도 ``try``/``except`` 구문을 사용하지 않고 다른 방법으로 구현해야 할 것
+같다.
 
 우리가 ``try``/``except`` 구문을 사용하는 이유는 신호를 전달하기 위함이다.
 이번에 재귀 호출을 해야 하는지, 아니면 종료 조건이 만족되어 그냥 결과값을
@@ -332,15 +504,20 @@ Take One: Globals
     tail_recursion_eliminated_code
     1.441 ms/pass
 
-다만, ``try``/``except`` 구문을 제거함으로써 25% 정도의 성능 향상을 도모할 수
-있었다.
+``try``/``except`` 구문을 제거함으로써 25% 정도의 성능 향상을 도모할 수
+있었지만, 충분히 만족스러운 수준은 아니었다. 재귀 호출 코드와 비교하여 여전히
+다섯 배 가량 느리다. 게다가 예외 객체를 이용하는 코드와 비교하여 상당히
+비직관적인 코드가 되었다는 것을 고려했을 때, 효용 대비 비용이 너무 큰
+방법이라는 생각이 들었다.
 
 Take Two: Coroutines
 ~~~~~~~~~~~~~~~~~~~~
 
-전역 변수를 사용하는 대신 `코루틴
-<https://docs.python.org/3/library/asyncio-task.html>`_\ 을 이용하는 방법도
-생각해보았다.
+예외 객체 대신 전역 변수를 사용하는 코드로 기대했던 만큼 성능 향상을 걷두지
+못했기 때문에 `코루틴 <https://docs.python.org/3/library/asyncio-task.html>`_\
+을 이용하는 방법도 생각해보았다. 단순하게 생각해서 재귀 호출 함수를 코루틴으로
+만들면 어떤 식으로든 호출자(caller)와 피호출자(callee)가 신호를 주고받을 수
+있지 않을까.
 
 StackOverflow의 어떤 답변은 코루틴을 다음과 같이 정의하고 있다.\ [#coroutine]_
 
@@ -348,9 +525,9 @@ StackOverflow의 어떤 답변은 코루틴을 다음과 같이 정의하고 있
     cooperatively passed between two different routines without returning.
 
 코루틴에 대한 학술적 정의와는 완벽하게 들어맞지 않을 수도 있지만, 지금 우리가
-하고자 하는 맥락에서 가장 이해하기 쉬운 설명이라는 생각이 들었다. 우리가 필요한
-부분은 두 함수가 신호를 주고 받는 장치이고, 코루틴이 그 부분을 해결해줄 수 있을
-것 같아서 코루틴을 이용하여 TRE 코드를 작성해보기로 하였다.
+하고자 하는 작업의 맥락에서 가장 이해하기 쉬운 설명이라는 생각이 들었다. 우리가
+필요한 부분은 두 함수가 신호를 주고 받는 장치이고, 코루틴이 그 부분을 해결해줄
+수 있을 것 같아서 코루틴을 이용하여 TRE 코드를 작성해보기로 하였다.
 
 .. code:: python
 
@@ -380,7 +557,7 @@ StackOverflow의 어떤 답변은 코루틴을 다음과 같이 정의하고 있
             return loop.run_until_complete(handler(f, *args, **kwargs))
         return wrapper
 
-코루틴을 이용할 경우 원본 코드를 약간 수정해야 한다. 
+코루틴을 이용할 경우 원본 코드를 약간 수정해야 한다.
 
 .. code:: python
 
@@ -407,15 +584,39 @@ StackOverflow의 어떤 답변은 코루틴을 다음과 같이 정의하고 있
     tail_recursion_eliminated_code
     19.460 ms/pass
 
-전역변수를 사용하는 코드에 비해서 13배 이상 느리기 때문에 사용하지 않는 것이 좋겠다.
+아쉽게도 성능은 훨씬 더 안 좋아졌다. 어쩌면 더 좋은 구조로 개선할 수 있을지도
+모른다. 어쨌든 전역변수를 사용하는 코드에 비해서 13배 이상 느리기 때문에
+사용하지 않는 것이 좋겠다.
 
 
 Conclusion
 ----------
 파이썬으로 알고리즘 문제를 풀다가 느낀 불편함으로 인해 한참동안 야크 털을 깎은
-것 같은데,\ [#yak-shaving]_ 나름 즐거운 경험이었다.
+것 같은데,\ [#yak-shaving]_ 나름 즐거운 경험이었다. 덕분에 어렴풋이 알고 있던
+개념들을 조금 더 확고하게 익힐 수 있었고, 평소에 들여다 볼만한 계기가 없었던
+파이썬 바이트 코드도 구경해 볼 수 있었다.
 
-파이썬에서의 TRE에 대한 비판 의견도 있다.\ [#critiques-on-tre]_ TRE를 도입할 경우 스택 트레이스가 어려워질 뿐만 아니라 재귀 호출이 프로그래밍의 
+TRE 코드를 통해 사실상 무제한으로 재귀호출을 할 수 있게 되었지만, 아쉽게도
+실제로 사용할만한 성능을 끌어내지는 못했다. Dive Deep 섹션에서 제시한 대안
+코드를 작성할 때 충분한 고민을 거치지 않아서 구조적인 결함이 있을 수도 있고,
+아니면 그보다 더 근본적인 문제가 있을지도 모른다.
+
+성능 문제 이외에도 파이썬에서의 TRE에 대한 비판 의견도 있다.\
+[#critiques-on-tre]_ TRE를 도입할 경우 스택 트레이스가 어려워질 뿐만 아니라
+재귀 호출이 모든 프로그래밍의 기초가 되어서는 안 된다는 시각이다. 파이썬은 재귀
+호출보다는 반복적(iterative) 해결책이 어울리는 언어이다. 나도 한가지 해결책으로
+모든 문제를 해결하려는 태도를 지양하는 편이기 때문에 이런 시각에 대체적으로
+동의한다.
+
+모든 문제를 재귀 호출로 해결할 필요는 없다. 다만, `동적 프로그래밍(dynamic
+programming) <https://en.wikipedia.org/wiki/Dynamic_programming>`_\ 과 같은
+방법으로 해결한 문제는 `점화식(recurrence relations)
+<https://en.wikipedia.org/wiki/Recurrence_relation>`_\ 으로 표현되기 마련이다.
+이런 경우에 재귀 호출을 사용한다면 수학식을 그대로 코드로 옮길 수 있기 때문에
+편리하다.
+
+만약 다음에 또 이런 주제로 야크 털을 깎을 일이 있다면 파이썬 인터프리터를
+개조해서 TRE를 지원하도록 만들어보는 것도 재밌을 것 같다.
 
 
 Footnotes
