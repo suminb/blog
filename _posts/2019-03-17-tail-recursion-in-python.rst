@@ -13,6 +13,8 @@ tags:
 - python
 title: Tail Recursion in Python
 summary: 파이썬에서 꼬리 재귀 제거(tail recursion elimination)를 구현한 이야기
+og_image: /attachments/2019/tail-recursion-in-python/tail-recursion.jpg
+og_image_source: https://stackoverflow.com/a/54573509
 ---
 
 요즘 `LeetCode <https://leetcode.com/>`_ 에서 하루에 하나씩 알고리즘 문제를
