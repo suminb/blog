@@ -11,6 +11,28 @@ layout: default
   </header>
 
   <article class="post-content">
+  {% assign curr_time = site.time | date: '%s' %}
+  {% assign post_time = page.date | date: '%s' %}
+  {% assign time_diff = curr_time | minus: post_time %}
+  {% assign days = time_diff | divided_by: 86400 %}
+
+  {% if days > 3650 %}
+  <div class="critical message">
+    This article is more than ten years old and potentially contains out-dated information.<br/>
+    작성한지 10년 이상 지난 게시물입니다. 최신의 정보와 맞지 않는 내용을 포함할 수도 있습니다.
+  </div>
+  {% elsif days > 1825 %}
+  <div class="error message">
+    This article is more than five years old and potentially contains out-dated information.<br/>
+    작성한지 5년 이상 지난 게시물입니다. 최신의 정보와 맞지 않는 내용을 포함할 수도 있습니다.
+  </div>
+  {% elsif days > 365 %}
+  <div class="warning message">
+    This article is more than a year old and potentially contains out-dated information.<br/>
+    작성한지 1년 이상 지난 게시물입니다. 최신의 정보와 맞지 않는 내용을 포함할 수도 있습니다.
+  </div>
+  {% endif %}
+  
   {{ content }}
   </article>
 

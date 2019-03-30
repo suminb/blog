@@ -471,6 +471,28 @@ tt.docutils.literal {
 /* User defined */
 /* ------------ */
 
+div.message {
+  min-height: 1em;
+  margin: 1em 0;
+  padding: 1em 1.5em;
+  border-radius: 4px;
+}
+div.warning.message {
+  background-color: #fff8db;
+  color: #b58105;
+  box-shadow: 0 0 0 1px #b58105 inset,0 0 0 0 transparent;
+}
+div.error.message {
+  background-color: #ffedde;
+  color: #f2711c;
+  box-shadow: 0 0 0 1px #f2711c inset,0 0 0 0 transparent;
+}
+div.critical.message {
+  background-color: #ffe8e6;
+  color: #db2828;
+  box-shadow: 0 0 0 1px #db2828 inset,0 0 0 0 transparent;
+}
+
 div.image-caption {
   text-align: center;
   color: gray;
