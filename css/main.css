@@ -14,6 +14,10 @@ body {
   line-height: 1.5;
   font-weight: 400  ;
   background-color: #fdfdfd;
+
+  /* For some reason, mobile Safari blows up the font size in landscape mode.
+  This serves as a temporary workaround. */
+  -webkit-text-size-adjust: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 500  ; }
