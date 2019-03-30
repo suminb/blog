@@ -190,7 +190,13 @@ a.citation-reference, a.footnote-reference {
   margin-top: 5px;
 }
 
-.post-content { margin: 0 0 30px; }
+.post-content {
+  margin: 0 0 30px;
+
+  /* This may not be an ideal solution, but at least this disables horizontal
+  scroll bars in small screens */
+  overflow-x: hidden;
+}
 
 .post-content > *,
 .post-content p,
