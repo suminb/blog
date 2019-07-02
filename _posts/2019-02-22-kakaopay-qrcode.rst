@@ -305,7 +305,7 @@ QR 코드를 만들어 낼 차례이다.
 뜬다. 코드에서 입력한 금액인 ``35,050``\ 원이 미리 입력되어서 송금 화면이 뜨는
 것을 확인할 수 있었다.
 
-.. image:: /attachments/2019/kakaopay-qrcode/kakaopay.png
+.. image:: /attachments/2019/kakaopay-qrcode/kakaopay-send.png
    :width: 320px
 
 마무리
