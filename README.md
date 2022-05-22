@@ -1,3 +1,8 @@
+# Personal Blog
+
+- Why hugo? -> Jekyll was pain in the ass.
+- TODO: Enable math (https://adityatelange.github.io/hugo-PaperMod/posts/math-typesetting/)
+
 ## Installation
 
 The following Ruby packages must be installed.
