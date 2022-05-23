@@ -1,12 +1,10 @@
 ---
-author: Sumin Byeon
 categories:
-- Computer Science
-draft: false
-layout: post
+  - Computer Science
 date: 2019-03-17
+published: true
 tags:
-- python
+  - python
 title: Tail Recursion in Python
 summary: 파이썬에서 꼬리 재귀 제거(tail recursion elimination)를 구현한 이야기
 og_image: /attachments/2019/tail-recursion-in-python/tail-recursion.jpg
@@ -96,10 +94,10 @@ Tail Recursion
 .. code:: python
 
     def factorial(n):
-      if n == 0:
-          return 1
-      else:
-          return n * factorial(n - 1)
+        if n == 0:
+            return 1
+        else:
+            return n * factorial(n - 1)
 
 ``factorial(n - 1)`` 호출이 끝난 후 ``n``\ 의 값과 곱해주어야 하기 때문에, 다시
 말해서, ``factorial(n)``\ 의 실행이 완료 되지 않은 상태에서 ``factorial(n -

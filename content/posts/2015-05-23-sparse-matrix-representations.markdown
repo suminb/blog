@@ -1,13 +1,14 @@
 ---
 categories:
-- Computer Science
-date: 2015-05-23
-published: true
-redirect_from:
-- /post/sparse-matrix-representations
+  - Computer Science
 tags:
-- math
-- sparse matrix
+  - math
+  - sparse matrix
+published: true
+date: 2015-05-23
+math: true
+redirect_from:
+  - /post/sparse-matrix-representations
 title: Sparse Matrix Representations
 ---
 
@@ -21,11 +22,11 @@ title: Sparse Matrix Representations
 
 $$
 \mathbf{A} = \begin{bmatrix}
-    0 & 0 & 4 & 0 & 0  \\
-    0 & 8 & 2 & 0 & 0  \\
-    0 & 7 & 4 & 0 & 3  \\
-    0 & 0 & 0 & 0 & 0  \\
-    0 & 0 & 0 & 0 & 5  \\
+    0 & 0 & 4 & 0 & 0  \\\\
+    0 & 8 & 2 & 0 & 0  \\\\
+    0 & 7 & 4 & 0 & 3  \\\\
+    0 & 0 & 0 & 0 & 0  \\\\
+    0 & 0 & 0 & 0 & 5  \\\\
 \end{bmatrix}
 $$
 

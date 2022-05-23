@@ -1,8 +1,7 @@
 baseURL = 'https://philosophical.one'
 languageCode = 'ko-kr'
 title = 'Rubbish Philosopher'
-theme = 'hugo-papermod'
-math = true
+theme = 'hugo-PaperMod'
 
 # https://github.com/dillonzq/LoveIt/blob/master/exampleSite/config.toml
 

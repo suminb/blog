@@ -53,27 +53,29 @@ Getting Started
 분석기(lexical analyzer)와 해석기(parser)를 직접 구현했지만, 나는 조금
 양아치(?)같은 방식으로 해결하기로 했다.
 
-    import subprocess
-    import sys
+```python
+import subprocess
+import sys
 
 
-    def parse(expr):
-        stmt = 'print({})'.format(expr)
-        p = subprocess.Popen(['python3', '-c', stmt],
-                             stdout=subprocess.PIPE,
-                             stderr=subprocess.PIPE)
-        r, _ = p.communicate()
-        return r.decode('utf-8').strip()
+def parse(expr):
+    stmt = 'print({})'.format(expr)
+    p = subprocess.Popen(['python3', '-c', stmt],
+                         stdout=subprocess.PIPE,
+                         stderr=subprocess.PIPE)
+    r, _ = p.communicate()
+    return r.decode('utf-8').strip()
 
 
-    if __name__ == '__main__':
-        x = parse(sys.argv[1])
-        try:
-            float(x)
-        except ValueError:
-            sys.exit(1)
-        else:
-            print(x)
+if __name__ == '__main__':
+    x = parse(sys.argv[1])
+    try:
+        float(x)
+    except ValueError:
+        sys.exit(1)
+    else:
+        print(x)
+```
 
 그렇다. 입력받은 수식을 다른 파이썬 인터프리터에 넘겨서 결과값을 출력하도록 하는 프로그램이다. (...) 사실, `eval` 나 `exec` 함수를 이용하는것과 별 차이가 없긴 하지만, 그렇다고 대놓고 그렇게 하다간 [작년처럼 부정행위로 간주될까봐](https://github.com/spoqa/spoqa-pycon-2015-codegolf/pull/35/files) 조금은 걱정되기도 했고, 수식 파서보다는 난독화에 조금 더 집중해보고 싶은 마음이 컸다. 어쨌든 "계산기 프로그램을 작성하세요" 라고 했지, "사칙연산 파서를 직접 만드세요" 라는 말은 없었으니까 나는 결백해!
 
